@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3DAi VoiceLink — Visual Mockup v1</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:    #050d1a;
+  --navy2:   #0a1628;
+  --navy3:   #0d1f3a;
+  --cyan:    #00d4ff;
+  --cyan2:   #00aacc;
+  --green:   #00ff9d;
+  --white:   #e8f4fd;
+  --muted:   #6a8faa;
+  --border:  rgba(0,212,255,0.15);
+  --glow:    0 0 30px rgba(0,212,255,0.25);
+  --font-display: 'Orbitron', monospace;
+  --font-body:    'Rajdhani', sans-serif;
+}
+
+body {
+  background: var(--navy);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ── MOCKUP BANNER ── */
+.mockup-banner {
+  background: #1a1000;
+  border-bottom: 2px solid #f9a825;
+  padding: 8px 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #f9a825;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ── NAV ── */
+nav {
+  background: rgba(5,13,26,0.95);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 33px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+}
+.nav-logo img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(0,212,255,0.3));
+}
+.nav-logo span { color: var(--white); }
+.nav-links { display: flex; gap: 32px; align-items: center; }
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--white); }
+.nav-right { display: flex; gap: 12px; align-items: center; }
+.btn-ghost {
+  padding: 8px 20px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  background: transparent;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+.btn-primary {
+  padding: 10px 24px;
+  background: var(--cyan);
+  color: var(--navy);
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: var(--font-body);
+  box-shadow: 0 0 20px rgba(0,212,255,0.3);
+}
+.btn-primary:hover { background: #00bbee; }
+.btn-large {
+  padding: 16px 40px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+.btn-outline-large {
+  padding: 14px 38px;
+  font-size: 17px;
+  border-radius: 8px;
+  border: 2px solid var(--cyan);
+  color: var(--cyan);
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+/* ── SECTION LABELS (mockup only) ── */
+.section-tag {
+  display: inline-block;
+  background: rgba(249,168,37,0.15);
+  border: 1px solid #f9a825;
+  color: #f9a825;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+/* ────────────────────────────────────────────
+   SECTION 1 — HERO
+──────────────────────────────────────────── */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #050d1a 0%, #0a1628 60%, #071220 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 60px 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 900px; height: 700px;
+  background: radial-gradient(ellipse, rgba(0,212,255,0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.hero-title-img {
+  width: min(480px, 78vw);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 28px rgba(0,212,255,0.55));
+  margin-bottom: 8px;
+}
+.hero-eyebrow {
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--cyan);
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.2vw, 44px);
+  font-weight: 900;
+  line-height: 1.15;
+  color: var(--white);
+  margin-bottom: 14px;
+  max-width: 680px;
+}
+.hero h1 span { color: var(--cyan); }
+.hero-sub {
+  font-size: 17px;
+  color: var(--muted);
+  margin-bottom: 26px;
+  line-height: 1.7;
+  max-width: 560px;
+}
+.hero-ctas { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; justify-content: center; }
+.hero-trust {
+  margin-top: 18px;
+  font-size: 13px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+.hero-trust span { color: var(--green); font-weight: 700; }
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+}
+.hero-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 120px;
+  background: linear-gradient(to top, #050d1a 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+.hero-image img {
+  height: min(480px, 50vh);
+  width: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  filter: brightness(3.5) contrast(1.1) drop-shadow(0 -16px 60px rgba(0,212,255,0.35));
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-bottom: 40px;
+}
+.hero-image::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 500px; height: 200px;
+  background: radial-gradient(ellipse, rgba(0,212,255,0.1) 0%, transparent 70%);
+}
+
+/* ── STATS TICKER ── */
+.stats-ticker {
+  background: var(--navy2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 60px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+.stat-item .num {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--cyan);
+}
+.stat-item .label {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+/* ────────────────────────────────────────────
+   SECTION 2 — THE PROBLEM
+──────────────────────────────────────────── */
+.section { padding: 90px 60px; }
+.section-center { text-align: center; max-width: 700px; margin: 0 auto 60px; }
+.section-center h2 {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.section-center h2 span { color: var(--cyan); }
+.section-center p { color: var(--muted); font-size: 17px; }
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.problem-card {
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+}
+.problem-card .icon { font-size: 32px; margin-bottom: 14px; }
+.problem-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: var(--white); }
+.problem-card p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+.problem-stat {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--cyan);
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* ────────────────────────────────────────────
+   SECTION 3 — LIVE DEMO
+──────────────────────────────────────────── */
+.demo-section {
+  background: var(--navy2);
+  padding: 90px 60px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.demo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
+.demo-form {
+  background: var(--navy3);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 36px;
+  box-shadow: var(--glow);
+}
+.demo-form h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--cyan);
+  margin-bottom: 8px;
+}
+.demo-form p { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.form-group select, .form-group input {
+  width: 100%;
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  color: var(--white);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: var(--font-body);
+}
+.demo-bullets { list-style: none; }
+.demo-bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--muted);
+}
+.demo-bullets li::before {
+  content: '✓';
+  color: var(--green);
+  font-weight: 700;
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.demo-bullets li strong { color: var(--white); display: block; }
+
+/* ────────────────────────────────────────────
+   SECTION 4 — FEATURES
+──────────────────────────────────────────── */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.feature-card {
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.feature-card:hover {
+  border-color: rgba(0,212,255,0.4);
+  box-shadow: var(--glow);
+}
+.feature-icon { font-size: 28px; margin-bottom: 14px; }
+.feature-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+.feature-card p { font-size: 13px; color: var(--muted); }
+
+/* ────────────────────────────────────────────
+   SECTION 5 — INFOGRAPHIC
+──────────────────────────────────────────── */
+.infographic-section {
+  background: var(--navy2);
+  padding: 90px 60px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+.infographic-placeholder {
+  max-width: 900px;
+  margin: 40px auto 0;
+  background: var(--navy3);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 60px;
+  color: var(--muted);
+  font-size: 15px;
+}
+.infographic-placeholder img {
+  max-width: 100%;
+  border-radius: 12px;
+  opacity: 0.9;
+}
+
+/* ────────────────────────────────────────────
+   SECTION 6 — INDUSTRIES
+──────────────────────────────────────────── */
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.industry-card {
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: border-color 0.2s;
+  cursor: pointer;
+}
+.industry-card:hover { border-color: rgba(0,212,255,0.4); }
+.industry-card .ind-icon { font-size: 28px; margin-bottom: 10px; }
+.industry-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+.industry-card p { font-size: 12px; color: var(--muted); }
+
+/* ────────────────────────────────────────────
+   SECTION 7 — SOCIAL PROOF
+──────────────────────────────────────────── */
+.proof-section {
+  background: var(--navy2);
+  padding: 90px 60px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+.testimonial-card {
+  background: var(--navy3);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+}
+.stars { color: #ffd700; font-size: 18px; margin-bottom: 12px; }
+.testimonial-card p { color: var(--muted); font-size: 14px; line-height: 1.7; font-style: italic; margin-bottom: 16px; }
+.testimonial-author { font-weight: 700; font-size: 14px; color: var(--white); }
+.testimonial-biz { font-size: 12px; color: var(--muted); }
+.result-tag {
+  display: inline-block;
+  background: rgba(0,255,157,0.1);
+  border: 1px solid var(--green);
+  color: var(--green);
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+/* ────────────────────────────────────────────
+   SECTION 8 — PRICING
+──────────────────────────────────────────── */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.pricing-card {
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 32px 24px;
+  text-align: center;
+  position: relative;
+}
+.pricing-card.popular {
+  border-color: var(--cyan);
+  box-shadow: var(--glow);
+  background: var(--navy3);
+}
+.popular-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--cyan);
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+  font-family: var(--font-display);
+  letter-spacing: 1px;
+}
+.plan-name {
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.plan-price {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.plan-price sup { font-size: 20px; vertical-align: top; margin-top: 8px; }
+.plan-price span { font-size: 16px; color: var(--muted); font-weight: 400; }
+.plan-minutes {
+  font-size: 13px;
+  color: var(--cyan);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.plan-features { list-style: none; margin-bottom: 24px; text-align: left; }
+.plan-features li {
+  font-size: 13px;
+  color: var(--muted);
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.plan-features li::before { content: '✓'; color: var(--green); font-weight: 700; }
+.pricing-note {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 32px;
+}
+.pricing-note span { color: var(--cyan); }
+
+/* ────────────────────────────────────────────
+   SECTION 9 — FAQ
+──────────────────────────────────────────── */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.faq-tabs { display: flex; gap: 10px; margin-bottom: 24px; }
+.faq-tab {
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  background: transparent;
+  font-family: var(--font-body);
+}
+.faq-tab.active { background: var(--cyan); color: var(--navy); border-color: var(--cyan); }
+.faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+}
+.faq-q { font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 8px; cursor: pointer; }
+.faq-a { font-size: 14px; color: var(--muted); line-height: 1.7; }
+
+/* ────────────────────────────────────────────
+   SECTION 10 — FINAL CTA
+──────────────────────────────────────────── */
+.final-cta {
+  background: linear-gradient(135deg, #050d1a 0%, #071628 100%);
+  padding: 100px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.final-cta::before {
+  content: '';
+  position: absolute;
+  bottom: -100px; left: -100px;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(0,212,255,0.06) 0%, transparent 70%);
+}
+.final-cta h2 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3vw, 44px);
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.final-cta h2 span { color: var(--cyan); }
+.final-cta p { color: var(--muted); font-size: 17px; margin-bottom: 32px; }
+.final-cta-buttons { display: flex; flex-direction: column; gap: 12px; max-width: 320px; }
+.final-phone {
+  margin-top: 20px;
+  font-size: 15px;
+  color: var(--muted);
+}
+.final-phone a { color: var(--cyan); text-decoration: none; font-weight: 700; }
+.final-grace { display: flex; justify-content: center; align-items: flex-end; }
+.final-grace img {
+  max-height: 500px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 30px rgba(0,212,255,0.15));
+}
+
+/* ────────────────────────────────────────────
+   INTEGRATIONS
+──────────────────────────────────────────── */
+.integrations-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.integration-tile {
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 10px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* ────────────────────────────────────────────
+   FOOTER
+──────────────────────────────────────────── */
+footer {
+  background: #030810;
+  border-top: 1px solid var(--border);
+  padding: 60px 60px 30px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer-brand .logo {
+  font-family: var(--font-display);
+  font-size: 16px;
+  color: var(--cyan);
+  margin-bottom: 12px;
+}
+.footer-brand p { font-size: 13px; color: var(--muted); line-height: 1.7; margin-bottom: 12px; }
+.footer-brand .contact { font-size: 13px; color: var(--muted); }
+.footer-brand .contact a { color: var(--cyan); text-decoration: none; }
+.footer-col h4 { font-size: 13px; font-weight: 700; color: var(--white); margin-bottom: 14px; letter-spacing: 0.5px; text-transform: uppercase; }
+.footer-col a { display: block; font-size: 13px; color: var(--muted); text-decoration: none; margin-bottom: 8px; }
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: var(--muted);
+}
+.footer-bottom a { color: var(--muted); text-decoration: none; margin-left: 20px; }
+
+/* divider */
+.divider-line {
+  height: 1px;
+  background: var(--border);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+</style>
+</head>
+<body>
+
+<!-- MOCKUP BANNER -->
+<div class="mockup-banner">⚠️ VISUAL MOCKUP v1 — Layout & structure only. Copy and images are placeholders. Colors and theme are real.</div>
+
+<!-- ══════════════════════════════
+     NAV
+══════════════════════════════ -->
+<nav>
+  <div class="nav-logo"><img src="site-images/fb-overlay-2.png" alt="3DAi VoiceLink"></div>
+  <div class="nav-links">
+    <a href="#">Company</a>
+    <a href="#">How It Works</a>
+    <a href="#">Solutions</a>
+    <a href="#">Pricing</a>
+    <a href="#">Resources</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn-ghost">Log In</button>
+    <button class="btn-primary">Book a Demo</button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════
+     SECTION 1 — HERO
+══════════════════════════════ -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="section-tag">Section 1 — Hero</div>
+    <img class="hero-title-img" src="site-images/fb-overlay-2.png" alt="3DAi VoiceLink">
+  </div>
+  <div class="hero-image">
+    <img src="site-images/freepik_a-realistic-horizontal-16_2819169121.png" alt="Grace — AI Voice Agent">
+  </div>
+  <div class="hero-copy">
+    <div class="hero-eyebrow">AI Voice Agent for Service Businesses</div>
+    <h1>Meet <span>Grace.</span><br>She Never Misses a Call.</h1>
+    <p class="hero-sub">24/7 answering. Natural conversations. Books appointments. Feeds your CRM. Setup in 24 hours.</p>
+    <div class="hero-ctas">
+      <button class="btn-primary btn-large">Book a Demo</button>
+      <button class="btn-outline-large">Talk to Grace Now →</button>
+    </div>
+    <div class="hero-trust">
+      <span>✓ Try Free for 7 Days</span> &nbsp;·&nbsp; No credit card &nbsp;·&nbsp; No contracts
+    </div>
+  </div>
+</section>
+
+<!-- STATS TICKER -->
+<div class="stats-ticker">
+  <div class="stat-item"><div class="num">62%</div><div class="label">of small biz calls go unanswered</div></div>
+  <div class="stat-item"><div class="num">78%</div><div class="label">buy from the first responder</div></div>
+  <div class="stat-item"><div class="num">24/7</div><div class="label">coverage — no holidays</div></div>
+  <div class="stat-item"><div class="num">90%+</div><div class="label">of callers can't tell it's AI</div></div>
+  <div class="stat-item"><div class="num">&lt;5s</div><div class="label">response time</div></div>
+</div>
+
+<!-- ══════════════════════════════
+     SECTION 2 — THE PROBLEM
+══════════════════════════════ -->
+<section class="section" style="background: var(--navy);">
+  <div class="section-center">
+    <div class="section-tag">Section 2 — The Problem</div>
+    <h2>Every Missed Call Is a <span>Missed Paycheck</span></h2>
+    <p>You're on the job. The phone rings. You can't answer. That lead just called your competitor.</p>
+  </div>
+  <div class="problem-grid">
+    <div class="problem-card">
+      <div class="icon">📵</div>
+      <span class="problem-stat">62%</span>
+      <h3>Calls Go Unanswered</h3>
+      <p>Most small businesses miss more than half their inbound calls. Every one of those is a potential job gone.</p>
+    </div>
+    <div class="problem-card">
+      <div class="icon">⚡</div>
+      <span class="problem-stat">78%</span>
+      <h3>First Responder Wins</h3>
+      <p>78% of customers hire whoever calls back first. If that's not you, it's your competitor.</p>
+    </div>
+    <div class="problem-card">
+      <div class="icon">💸</div>
+      <span class="problem-stat">$40K+</span>
+      <h3>A Receptionist Costs Too Much</h3>
+      <p>Full-time front desk staff run $35–50K per year. Grace does the same job for a fraction of that.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SECTION 3 — LIVE DEMO
+══════════════════════════════ -->
+<section class="demo-section">
+  <div class="section-tag" style="display:block;text-align:center;margin-bottom:16px;">Section 3 — Live Demo</div>
+  <div class="section-center">
+    <h2>Talk to <span style="color:var(--cyan)">Grace</span> Right Now</h2>
+    <p>Don't take our word for it. Pick an industry, enter your number, and Grace calls you in seconds.</p>
+  </div>
+  <div class="demo-grid">
+    <div class="demo-form">
+      <h3>Request a Live Call</h3>
+      <p>Grace will call you immediately. Real conversation. No script reading.</p>
+      <div class="form-group">
+        <label>Select Your Industry</label>
+        <select><option>Plumbing</option><option>HVAC</option><option>Roofing</option><option>Real Estate</option><option>Dental / Medical</option><option>Law Firm</option></select>
+      </div>
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="First name">
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="We'll call this number immediately">
+      </div>
+      <button class="btn-primary" style="width:100%;padding:14px;font-size:16px;margin-top:8px;">Call Me Now →</button>
+      <p style="font-size:11px;color:var(--muted);margin-top:10px;text-align:center;">By submitting you agree to receive a demo call from our AI system.</p>
+    </div>
+    <div>
+      <ul class="demo-bullets">
+        <li><strong>Answers in under 5 seconds</strong>No hold music. No voicemail. Grace picks up instantly.</li>
+        <li><strong>Natural, human-like conversation</strong>90%+ of callers can't tell it's AI.</li>
+        <li><strong>Qualifies your lead on the call</strong>Grace asks the right questions and gets the info you need.</li>
+        <li><strong>Books the appointment</strong>Straight into your calendar. No back-and-forth.</li>
+        <li><strong>Available 24/7</strong>2 AM emergency call? Grace has it covered.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SECTION 4 — FEATURES
+══════════════════════════════ -->
+<section class="section" style="background: var(--navy);">
+  <div class="section-center">
+    <div class="section-tag">Section 4 — What Grace Can Do</div>
+    <h2>Everything Your <span style="color:var(--cyan)">Front Desk</span> Should Be Doing</h2>
+    <p>Grace handles the phones so you can focus on the work.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card"><div class="feature-icon">🕐</div><h3>24/7 Answering</h3><p>Never miss a call — nights, weekends, holidays. Grace is always on.</p></div>
+    <div class="feature-card"><div class="feature-icon">💬</div><h3>Natural Conversations</h3><p>Human-like voice. No robotic scripts. Callers stay on the line.</p></div>
+    <div class="feature-card"><div class="feature-icon">🎯</div><h3>Lead Qualification</h3><p>Asks the right questions. Filters tire-kickers from real buyers.</p></div>
+    <div class="feature-card"><div class="feature-icon">📅</div><h3>Appointment Booking</h3><p>Books directly into your calendar. No double-booking, no back-and-forth.</p></div>
+    <div class="feature-card"><div class="feature-icon">📱</div><h3>SMS & Email Confirmations</h3><p>Automatic follow-ups sent the moment a booking is confirmed.</p></div>
+    <div class="feature-card"><div class="feature-icon">🎙️</div><h3>Call Recording & Transcripts</h3><p>Every call logged, recorded, and searchable. Never lose context.</p></div>
+    <div class="feature-card"><div class="feature-icon">🔌</div><h3>CRM Integration</h3><p>Drops lead data straight into Jobber, HubSpot, ServiceTitan, and more.</p></div>
+    <div class="feature-card"><div class="feature-icon">🌍</div><h3>Multilingual</h3><p>Speaks your customers' language. English, Spanish, and more.</p></div>
+    <div class="feature-card"><div class="feature-icon">🧠</div><h3>Custom AI Training</h3><p>Grace learns your business — your services, prices, FAQs, your voice.</p></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SECTION 5 — SYSTEM INFOGRAPHIC
+══════════════════════════════ -->
+<section class="infographic-section">
+  <div class="section-tag">Section 5 — The Complete System</div>
+  <div class="section-center">
+    <h2>More Than a Phone Agent —<br>A <span style="color:var(--cyan)">Complete Growth Engine</span></h2>
+    <p>Grace is the front door. Behind it is a full 11-step customer lifecycle system.</p>
+  </div>
+  <div class="infographic-placeholder">
+    <p style="margin-bottom:20px;color:var(--muted);">[ 3DAi System Infographic v3 — embedded here ]</p>
+    <img src="3DAi_System_Infographic_v3.png" alt="3DAi System Infographic" onerror="this.style.display='none'">
+  </div>
+  <div style="text-align:center;margin-top:28px;">
+    <button class="btn-outline-large">See How It All Works →</button>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SECTION 6 — INDUSTRIES
+══════════════════════════════ -->
+<section class="section" style="background: var(--navy);">
+  <div class="section-center">
+    <div class="section-tag">Section 6 — Industries</div>
+    <h2>Built for Businesses That <span style="color:var(--cyan)">Run on Phone Calls</span></h2>
+    <p>If your phone rings and you can't always answer, Grace was built for you.</p>
+  </div>
+  <div class="industries-grid">
+    <div class="industry-card"><div class="ind-icon">🔧</div><h4>Plumbing</h4><p>Capture emergency calls 24/7</p></div>
+    <div class="industry-card"><div class="ind-icon">🌡️</div><h4>HVAC</h4><p>Never miss a seasonal rush call</p></div>
+    <div class="industry-card"><div class="ind-icon">🏚️</div><h4>Roofing</h4><p>Book storm-damage leads instantly</p></div>
+    <div class="industry-card"><div class="ind-icon">🌳</div><h4>Landscaping</h4><p>Fill your schedule automatically</p></div>
+    <div class="industry-card"><div class="ind-icon">🦷</div><h4>Dental & Medical</h4><p>Appointment booking around the clock</p></div>
+    <div class="industry-card"><div class="ind-icon">⚖️</div><h4>Legal</h4><p>Qualify leads before you call back</p></div>
+    <div class="industry-card"><div class="ind-icon">🏡</div><h4>Real Estate</h4><p>Respond to every listing inquiry</p></div>
+    <div class="industry-card"><div class="ind-icon">🛡️</div><h4>Insurance</h4><p>Handle policy inquiries 24/7</p></div>
+    <div class="industry-card"><div class="ind-icon">💅</div><h4>Salons & Med Spas</h4><p>Book while you're with a client</p></div>
+    <div class="industry-card"><div class="ind-icon">🚗</div><h4>Auto Services</h4><p>Schedule service appointments instantly</p></div>
+    <div class="industry-card"><div class="ind-icon">🔨</div><h4>General Contractors</h4><p>Capture bids while you're on site</p></div>
+    <div class="industry-card"><div class="ind-icon">🏠</div><h4>Home Services</h4><p>Answer every lead, every channel</p></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SECTION 7 — SOCIAL PROOF
+══════════════════════════════ -->
+<section class="proof-section">
+  <div class="section-tag" style="display:block;text-align:center;">Section 7 — Results & Social Proof</div>
+  <div class="section-center">
+    <h2>Results Service Businesses <span style="color:var(--cyan)">Can Feel</span></h2>
+    <p>Real numbers from real businesses using Grace.</p>
+  </div>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <div class="result-tag">+45% Bookings</div>
+      <div class="stars">★★★★★</div>
+      <p>"We were missing calls every single day. Grace answered all of them and our booking rate jumped in the first week."</p>
+      <div class="testimonial-author">Mike T.</div>
+      <div class="testimonial-biz">HVAC Company · Phoenix, AZ</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="result-tag">-60% Hold Times</div>
+      <div class="stars">★★★★★</div>
+      <p>"My customers used to sit on hold forever. Now Grace handles the first call, qualifies them, and I call back the real leads."</p>
+      <div class="testimonial-author">Sarah K.</div>
+      <div class="testimonial-biz">Insurance Agency · Dallas, TX</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="result-tag">24/7 Coverage</div>
+      <div class="stars">★★★★★</div>
+      <p>"A customer called at 11pm with an emergency. Grace answered, gathered everything, and had an appointment booked by midnight."</p>
+      <div class="testimonial-author">James R.</div>
+      <div class="testimonial-biz">Plumbing Co. · Chicago, IL</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     INTEGRATIONS
+══════════════════════════════ -->
+<section class="section" style="background:var(--navy);padding-top:60px;padding-bottom:60px;">
+  <div class="section-center" style="margin-bottom:32px;">
+    <div class="section-tag">Integrations</div>
+    <h2>Grace Plugs Into the Tools <span style="color:var(--cyan)">You Already Use</span></h2>
+  </div>
+  <div class="integrations-grid">
+    <div class="integration-tile">Jobber</div>
+    <div class="integration-tile">Housecall Pro</div>
+    <div class="integration-tile">ServiceTitan</div>
+    <div class="integration-tile">HubSpot</div>
+    <div class="integration-tile">Pipedrive</div>
+    <div class="integration-tile">Google Cal</div>
+    <div class="integration-tile">Calendly</div>
+    <div class="integration-tile">Google LSA</div>
+    <div class="integration-tile">Yelp</div>
+    <div class="integration-tile">Angi</div>
+    <div class="integration-tile">Thumbtack</div>
+    <div class="integration-tile">Facebook</div>
+    <div class="integration-tile">Zapier</div>
+    <div class="integration-tile">Webhooks</div>
+    <div class="integration-tile">CallRail</div>
+    <div class="integration-tile">Meta Pixel</div>
+    <div class="integration-tile">Google Analytics</div>
+    <div class="integration-tile">Custom API</div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SECTION 8 — PRICING
+══════════════════════════════ -->
+<section class="section" style="background:var(--navy2);border-top:1px solid var(--border);">
+  <div class="section-center">
+    <div class="section-tag">Section 8 — Pricing</div>
+    <h2>Simple Pricing. <span style="color:var(--cyan)">No Contracts.</span></h2>
+    <p>Pick the plan that fits your call volume. Cancel anytime.</p>
+  </div>
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <div class="plan-name">Starter</div>
+      <div class="plan-price"><sup>$</sup>300<span>/mo</span></div>
+      <div class="plan-minutes">500 Minutes Included</div>
+      <ul class="plan-features">
+        <li>Standard Voice Library</li>
+        <li>Email Support</li>
+        <li>Basic Analytics</li>
+        <li>1 AI Agent</li>
+      </ul>
+      <button class="btn-primary" style="width:100%">Get Started</button>
+    </div>
+    <div class="pricing-card popular">
+      <div class="popular-badge">⭐ MOST POPULAR</div>
+      <div class="plan-name">Pro</div>
+      <div class="plan-price"><sup>$</sup>500<span>/mo</span></div>
+      <div class="plan-minutes">1,000 Minutes Included</div>
+      <ul class="plan-features">
+        <li>Premium Voice Library</li>
+        <li>Priority Support</li>
+        <li>Advanced Analytics</li>
+        <li>CRM Integration</li>
+      </ul>
+      <button class="btn-primary" style="width:100%">Get Started</button>
+    </div>
+    <div class="pricing-card">
+      <div class="plan-name">Business</div>
+      <div class="plan-price"><sup>$</sup>1,000<span>/mo</span></div>
+      <div class="plan-minutes">2,500 Minutes Included</div>
+      <ul class="plan-features">
+        <li>Premium Voice Library</li>
+        <li>Dedicated Support</li>
+        <li>Real-time Reporting</li>
+        <li>Custom Integrations</li>
+      </ul>
+      <button class="btn-primary" style="width:100%">Get Started</button>
+    </div>
+    <div class="pricing-card">
+      <div class="plan-name">Enterprise</div>
+      <div class="plan-price"><sup>$</sup>1,500<span>/mo</span></div>
+      <div class="plan-minutes">5,000 Minutes Included</div>
+      <ul class="plan-features">
+        <li>Custom Voice Cloning</li>
+        <li>Dedicated Account Manager</li>
+        <li>Real-time Reporting</li>
+        <li>Custom Integrations</li>
+      </ul>
+      <button class="btn-primary" style="width:100%">Get Started</button>
+    </div>
+  </div>
+  <p class="pricing-note">Try free for 7 days — no credit card required. <span>No contracts. Cancel anytime.</span></p>
+</section>
+
+<!-- ══════════════════════════════
+     SECTION 9 — FAQ
+══════════════════════════════ -->
+<section class="section" style="background:var(--navy);">
+  <div class="section-center">
+    <div class="section-tag">Section 9 — FAQ</div>
+    <h2>Frequently Asked <span style="color:var(--cyan)">Questions</span></h2>
+  </div>
+  <div class="faq-grid">
+    <div>
+      <div class="faq-tabs">
+        <button class="faq-tab active">Product</button>
+        <button class="faq-tab">Pricing</button>
+      </div>
+      <div class="faq-item"><div class="faq-q">How does Grace work?</div><div class="faq-a">Grace answers your calls using advanced AI voice technology. She has a natural conversation, qualifies the lead, books the appointment, and drops everything into your CRM.</div></div>
+      <div class="faq-item"><div class="faq-q">Will callers know it's AI?</div><div class="faq-a">90%+ of callers can't tell. Grace sounds natural, handles pauses, and responds in real time — not like a phone tree.</div></div>
+      <div class="faq-item"><div class="faq-q">How does Grace book on my calendar?</div><div class="faq-a">Grace connects directly to Google Calendar, Calendly, or your CRM's booking system and schedules appointments in real time during the call.</div></div>
+      <div class="faq-item"><div class="faq-q">What if Grace can't answer a question?</div><div class="faq-a">Grace gracefully escalates — she takes a message, sets a callback, or transfers to you if needed. No dead ends.</div></div>
+      <div class="faq-item"><div class="faq-q">Can I forward my existing number?</div><div class="faq-a">Yes. Simple call forwarding — your number stays the same, Grace handles the calls.</div></div>
+    </div>
+    <div>
+      <div class="faq-tabs">
+        <button class="faq-tab active">Pricing</button>
+      </div>
+      <div class="faq-item"><div class="faq-q">Is there a contract?</div><div class="faq-a">No contracts. Month-to-month. Cancel anytime with no penalty.</div></div>
+      <div class="faq-item"><div class="faq-q">How do minutes work?</div><div class="faq-a">Minutes are the total call time Grace handles per month. Most businesses use far less than their plan allows.</div></div>
+      <div class="faq-item"><div class="faq-q">What's included in the free trial?</div><div class="faq-a">Full access to the Pro plan for 7 days. No credit card required. No setup fees.</div></div>
+      <div class="faq-item"><div class="faq-q">What happens after the free trial?</div><div class="faq-a">You pick a plan and continue. If you don't, your account pauses — no charges, no surprises.</div></div>
+      <div class="faq-item"><div class="faq-q">Do you offer custom plans?</div><div class="faq-a">Yes. High-volume businesses contact us for a custom quote with dedicated support and custom integrations.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SECTION 10 — FINAL CTA
+══════════════════════════════ -->
+<section class="final-cta">
+  <div>
+    <div class="section-tag">Section 10 — Final CTA</div>
+    <h2>Ready to Never Miss<br>Another <span>Call?</span></h2>
+    <p>Join service businesses across the US who've handed their phones to Grace — and got their time back.</p>
+    <div class="final-cta-buttons">
+      <button class="btn-primary btn-large">Start Free Trial</button>
+      <button class="btn-outline-large">Book a Demo</button>
+    </div>
+    <div class="final-phone">Or call us: <a href="tel:8663903141">AIPHONEAGENTS.BIZ · 866.390.3141</a></div>
+  </div>
+  <div class="final-grace">
+    <img src="site-images/freepik_a-realistic-horizontal-16_2819169121.png" alt="Grace">
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">3DAi VoiceLink</div>
+      <p>AI phone agents for service businesses. Never miss a lead. Never lose a customer.</p>
+      <div class="contact">
+        <div><a href="tel:8663903141">866.390.3141</a></div>
+        <div><a href="https://aiphoneagents.biz">AIPHONEAGENTS.BIZ</a></div>
+        <div style="margin-top:8px;font-size:11px;">A TrezDev Company</div>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="#">How It Works</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Free Trial</a>
+    </div>
+    <div class="footer-col">
+      <h4>Solutions</h4>
+      <a href="#">Home Services</a>
+      <a href="#">Medical & Dental</a>
+      <a href="#">Legal</a>
+      <a href="#">Real Estate</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="#">ROI Calculator</a>
+      <a href="#">Case Studies</a>
+      <a href="#">Help Center</a>
+      <a href="#">API Docs</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Log In</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 3DAi VoiceLink — A TrezDev Company</div>
+    <div>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

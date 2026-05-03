@@ -1,0 +1,1178 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-3zbxo6iv> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes"><!-- Favicon --><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="LeadTruffle | 24/7 AI Lead Qualification Tools for Home Service Contractors RSS Feed" href="https://www.leadtruffle.co/rss.xml"><meta name="generator" content="Astro v5.7.11"><meta name="theme-color" content="#000000"><!-- DNS optimizations for external domains --><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://connect.facebook.net"><link rel="dns-prefetch" href="https://static.ads-twitter.com"><link rel="dns-prefetch" href="https://s3-us-west-2.amazonaws.com"><link rel="dns-prefetch" href="https://r.wdfl.co"><link rel="dns-prefetch" href="https://analytics.ahrefs.com"><!-- Font preloads --><link rel="preload" href="/font/Inter/Inter-VariableFont_opsz,wght.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/font/Inter/Inter-Italic-VariableFont_opsz,wght.ttf" as="font" type="font/ttf" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://www.leadtruffle.co/"><!-- Primary Meta Tags --><title>LeadTruffle | AI Speed-to-Lead for Home Service Pros</title><meta name="title" content="LeadTruffle | AI Speed-to-Lead for Home Service Pros"><meta name="description" content="Speed-to-lead platform built for home service businesses. AI voice and SMS answer missed calls, Google LSA, Thumbtack, Yelp, and Facebook leads in seconds using your 10DLC number and book jobs into your CRM."><meta name="keywords" content="speed to lead home services, AI voice agent, missed call text back, 10DLC texting, Google LSA response, Thumbtack leads, Yelp leads, Facebook lead ads, home service CRM"><meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><!-- Custom Meta Tags --><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:site_name" content="LeadTruffle | 24/7 AI Lead Qualification Tools for Home Service Contractors"><meta property="og:url" content="https://www.leadtruffle.co/"><meta property="og:title" content="LeadTruffle | AI Speed-to-Lead for Home Service Pros"><meta property="og:description" content="Speed-to-lead platform built for home service businesses. AI voice and SMS answer missed calls, Google LSA, Thumbtack, Yelp, and Facebook leads in seconds using your 10DLC number and book jobs into your CRM."><meta property="og:image" content="https://www.leadtruffle.co/opengraph.jpg"><meta property="og:image:alt" content="LeadTruffle | AI Speed-to-Lead for Home Service Pros"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://www.leadtruffle.co/"><meta name="twitter:title" content="LeadTruffle | AI Speed-to-Lead for Home Service Pros"><meta name="twitter:description" content="Speed-to-lead platform built for home service businesses. AI voice and SMS answer missed calls, Google LSA, Thumbtack, Yelp, and Facebook leads in seconds using your 10DLC number and book jobs into your CRM."><meta name="twitter:image" content="https://www.leadtruffle.co/opengraph.jpg"><meta name="twitter:image:alt" content="LeadTruffle | AI Speed-to-Lead for Home Service Pros"><!-- Google tag (gtag.js) - Optimized loading --><script>
+  const GA_MEASUREMENT_ID = 'G-QB48MF0W3X'
+  const ATTRIBUTION_STORAGE_KEY = 'lt_attrib_v1'
+  const ATTRIBUTION_PARAM_WHITELIST = new Set([
+    'utm_source',
+    'utm_medium',
+    'utm_campaign',
+    'utm_term',
+    'utm_content',
+    'gclid',
+    'gbraid',
+    'wbraid',
+    'matchtype',
+    'device',
+    'network',
+    'campaignid',
+    'adgroupid',
+    'creative',
+  ])
+  const ATTRIBUTED_LINK_DECORATION_KEYS = new Set([
+    ...Array.from(ATTRIBUTION_PARAM_WHITELIST),
+    'lt_click_id',
+  ])
+  const OVERRIDDEN_UTM_KEYS = new Set([
+    'utm_source',
+    'utm_medium',
+    'utm_campaign',
+    'utm_term',
+    'utm_content',
+  ])
+  const ATTRIBUTION_TTL_MS = 1000 * 60 * 60 * 24 * 30
+  const MAX_ATTRIBUTION_RUNTIME_ERRORS = 5
+
+  // @ts-ignore
+  window.dataLayer = window.dataLayer || []
+  // @ts-ignore
+  window.gtag = window.gtag || function () {
+    // @ts-ignore
+    window.dataLayer.push(arguments)
+  }
+  // @ts-ignore
+  window.__leadTruffleGtagConfigured = window.__leadTruffleGtagConfigured || false
+  // @ts-ignore
+  window.__leadTruffleGtagScriptLoading = window.__leadTruffleGtagScriptLoading || false
+  // @ts-ignore
+  window.__leadTruffleAttributionDisabled = window.__leadTruffleAttributionDisabled || false
+  // @ts-ignore
+  window.__leadTruffleAttributionErrorCount = window.__leadTruffleAttributionErrorCount || 0
+
+  function reportAttributionRuntimeError(context, error) {
+    try {
+      // @ts-ignore
+      const nextErrorCount = Number(window.__leadTruffleAttributionErrorCount || 0) + 1
+      // @ts-ignore
+      window.__leadTruffleAttributionErrorCount = nextErrorCount
+
+      console.error('Lead attribution runtime error', {
+        context,
+        error,
+        errorCount: nextErrorCount,
+      })
+
+      if (nextErrorCount >= MAX_ATTRIBUTION_RUNTIME_ERRORS) {
+        // @ts-ignore
+        window.__leadTruffleAttributionDisabled = true
+        console.error(
+          'Lead attribution decoration disabled after repeated runtime errors.',
+        )
+      }
+    } catch {
+      // Never throw from error reporting.
+    }
+  }
+
+  function ensureGoogleTagScriptLoaded() {
+    const existingScript = document.querySelector(
+      `script[data-gtag-id="${GA_MEASUREMENT_ID}"]`,
+    )
+    // @ts-ignore
+    if (existingScript || window.__leadTruffleGtagScriptLoading) return
+
+    const script = document.createElement('script')
+    script.async = true
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`
+    script.setAttribute('data-gtag-id', GA_MEASUREMENT_ID)
+    script.addEventListener('error', () => {
+      console.error('Failed to load Google Analytics script', {
+        measurementId: GA_MEASUREMENT_ID,
+      })
+    })
+    // @ts-ignore
+    window.__leadTruffleGtagScriptLoading = true
+    script.addEventListener('load', () => {
+      // @ts-ignore
+      window.__leadTruffleGtagScriptLoading = false
+    })
+    document.head.appendChild(script)
+  }
+
+  function ensureGoogleTagConfigured() {
+    // @ts-ignore
+    if (window.__leadTruffleGtagConfigured) return
+    if (typeof window.gtag !== 'function') return
+
+    window.gtag('js', new Date())
+    window.gtag('config', GA_MEASUREMENT_ID)
+    // @ts-ignore
+    window.__leadTruffleGtagConfigured = true
+  }
+
+  function createLeadTruffleClickId() {
+    try {
+      if (
+        window.crypto &&
+        typeof window.crypto.randomUUID === 'function'
+      ) {
+        return window.crypto.randomUUID()
+      }
+      if (
+        window.crypto &&
+        typeof window.crypto.getRandomValues === 'function'
+      ) {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (char) => {
+          const randomByte = window.crypto.getRandomValues(new Uint8Array(1))[0]
+          const random = randomByte & 15
+          const value = char === 'x' ? random : (random & 3) | 8
+          return value.toString(16)
+        })
+      }
+    } catch (error) {
+      console.error('Failed generating lead attribution click id', error)
+    }
+    return `lt-${Date.now()}-${Math.random().toString(16).slice(2, 10)}`
+  }
+
+  function readCurrentAttributionParams() {
+    const searchParams = new URLSearchParams(window.location.search || '')
+    const params = {}
+
+    for (const [key, value] of searchParams.entries()) {
+      if (!ATTRIBUTION_PARAM_WHITELIST.has(key)) continue
+      if (typeof value !== 'string' || value.length === 0) continue
+      params[key] = value
+    }
+
+    return params
+  }
+
+  function loadStoredAttribution() {
+    try {
+      const raw = window.localStorage.getItem(ATTRIBUTION_STORAGE_KEY)
+      if (!raw) return {}
+      const parsed = JSON.parse(raw)
+      if (!parsed || typeof parsed !== 'object') return {}
+      return parsed
+    } catch {
+      return {}
+    }
+  }
+
+  function saveStoredAttribution(attribution) {
+    try {
+      window.localStorage.setItem(
+        ATTRIBUTION_STORAGE_KEY,
+        JSON.stringify(attribution),
+      )
+    } catch {
+      // Ignore storage write failures (private mode / blocked storage).
+    }
+  }
+
+  function mergeLeadTruffleAttributionData() {
+    const current = readCurrentAttributionParams()
+    const storedRaw = loadStoredAttribution()
+    const now = Date.now()
+    const hasFreshStoredAttribution =
+      typeof storedRaw.lt_first_seen_ts === 'number' &&
+      now - storedRaw.lt_first_seen_ts <= ATTRIBUTION_TTL_MS
+    const stored = hasFreshStoredAttribution ? storedRaw : {}
+    const merged = { ...stored, ...current }
+
+    if (
+      typeof merged.lt_click_id !== 'string' ||
+      merged.lt_click_id.length === 0
+    ) {
+      merged.lt_click_id = createLeadTruffleClickId()
+    }
+
+    if (typeof merged.lt_first_seen_ts !== 'number') {
+      merged.lt_first_seen_ts = now
+    }
+    if (
+      typeof merged.lt_first_path !== 'string' ||
+      merged.lt_first_path.length === 0
+    ) {
+      merged.lt_first_path = window.location.pathname
+    }
+    if (
+      typeof merged.lt_original_referrer !== 'string' ||
+      merged.lt_original_referrer.length === 0
+    ) {
+      const originalReferrer = getOriginalReferrer()
+      if (originalReferrer.length > 0) {
+        merged.lt_original_referrer = originalReferrer
+      }
+    }
+
+    merged.lt_last_seen_ts = now
+    merged.lt_last_path = window.location.pathname
+
+    saveStoredAttribution(merged)
+    return merged
+  }
+
+  function isAttributionDecoratedUrl(url) {
+    try {
+      const parsed = new URL(url, window.location.href)
+      const hostname = parsed.hostname.toLowerCase()
+      return (
+        hostname === 'app.leadtruffle.com' ||
+        hostname === 'calendly.com' ||
+        hostname.endsWith('.calendly.com')
+      )
+    } catch {
+      return false
+    }
+  }
+
+  function isAppLeadTruffleUrl(url) {
+    try {
+      const parsed = new URL(url, window.location.href)
+      return parsed.hostname.toLowerCase() === 'app.leadtruffle.com'
+    } catch {
+      return false
+    }
+  }
+
+  function isCalendlyUrl(url) {
+    try {
+      const parsed = new URL(url, window.location.href)
+      const hostname = parsed.hostname.toLowerCase()
+      return hostname === 'calendly.com' || hostname.endsWith('.calendly.com')
+    } catch {
+      return false
+    }
+  }
+
+  function isLeadTruffleHostname(hostname) {
+    const normalizedHostname = hostname.toLowerCase()
+    return (
+      normalizedHostname === 'leadtruffle.co' ||
+      normalizedHostname === 'www.leadtruffle.co' ||
+      normalizedHostname.endsWith('.leadtruffle.co') ||
+      normalizedHostname === 'app.leadtruffle.com'
+    )
+  }
+
+  function getOriginalReferrer() {
+    const documentReferrer =
+      typeof document.referrer === 'string' ? document.referrer.trim() : ''
+    if (!documentReferrer) return ''
+
+    try {
+      const referrerUrl = new URL(documentReferrer)
+      const referrerHostname = referrerUrl.hostname.toLowerCase()
+      if (!referrerHostname) return ''
+      if (isLeadTruffleHostname(referrerHostname)) return ''
+
+      return referrerHostname
+    } catch {
+      return ''
+    }
+  }
+
+  function decorateAttributedHref(href, attribution) {
+    let parsedUrl
+    try {
+      parsedUrl = new URL(href, window.location.href)
+    } catch {
+      return href
+    }
+
+    if (!isAttributionDecoratedUrl(parsedUrl.toString())) return href
+
+    for (const [key, value] of Object.entries(attribution || {})) {
+      if (!ATTRIBUTED_LINK_DECORATION_KEYS.has(key)) continue
+      if (typeof value !== 'string' || value.length === 0) continue
+
+      if (OVERRIDDEN_UTM_KEYS.has(key)) {
+        const existingValue = parsedUrl.searchParams.get(key)
+        if (existingValue && existingValue !== value) {
+          const originalUtmKey = `lt_link_${key}`
+          if (!parsedUrl.searchParams.has(originalUtmKey)) {
+            parsedUrl.searchParams.set(originalUtmKey, existingValue)
+          }
+        }
+        parsedUrl.searchParams.set(key, value)
+        continue
+      }
+
+      if (!parsedUrl.searchParams.has(key)) {
+        parsedUrl.searchParams.set(key, value)
+      }
+    }
+
+    const originalReferrer =
+      attribution && typeof attribution.lt_original_referrer === 'string'
+        ? attribution.lt_original_referrer
+        : ''
+
+    if (originalReferrer.length > 0 && isCalendlyUrl(parsedUrl.toString())) {
+      // Calendly analytics only supports UTM fields, so encode original referrer in utm_content.
+      const currentUtmContent = parsedUrl.searchParams.get('utm_content') || ''
+      const refMarker = `ref:${originalReferrer}`
+
+      if (!currentUtmContent.includes(refMarker)) {
+        parsedUrl.searchParams.set(
+          'utm_content',
+          currentUtmContent.length > 0
+            ? `${currentUtmContent}|${refMarker}`
+            : refMarker,
+        )
+      }
+    }
+
+    if (
+      originalReferrer.length > 0 &&
+      isAppLeadTruffleUrl(parsedUrl.toString()) &&
+      !parsedUrl.searchParams.has('original_referrer')
+    ) {
+      parsedUrl.searchParams.set('original_referrer', originalReferrer)
+    }
+
+    return parsedUrl.toString()
+  }
+
+  function decorateAttributedAnchor(anchor, attribution) {
+    if (!(anchor instanceof HTMLAnchorElement)) return
+    // @ts-ignore
+    if (window.__leadTruffleAttributionDisabled) return
+
+    const href = anchor.getAttribute('href')
+    if (!href || !isAttributionDecoratedUrl(href)) return
+
+    const decoratedHref = decorateAttributedHref(href, attribution)
+    if (decoratedHref !== href) {
+      anchor.setAttribute('href', decoratedHref)
+    }
+  }
+
+  function rewriteAttributedAnchors(attribution) {
+    // @ts-ignore
+    if (window.__leadTruffleAttributionDisabled) return
+
+    const anchors = document.querySelectorAll(
+      'a[href*="calendly.com"], a[href*="app.leadtruffle.com"]',
+    )
+    for (const anchor of anchors) {
+      decorateAttributedAnchor(anchor, attribution)
+    }
+  }
+
+  function observeAttributedAnchors() {
+    // @ts-ignore
+    if (window.__leadTruffleCalendlyObserverAttached) return
+    // @ts-ignore
+    if (window.__leadTruffleAttributionDisabled) return
+    if (typeof MutationObserver !== 'function') return
+
+    const observer = new MutationObserver((mutations) => {
+      // @ts-ignore
+      if (window.__leadTruffleAttributionDisabled) return
+
+      const latest = loadStoredAttribution()
+
+      try {
+        for (const mutation of mutations) {
+          if (
+            mutation.type === 'attributes' &&
+            mutation.target instanceof HTMLAnchorElement
+          ) {
+            decorateAttributedAnchor(mutation.target, latest)
+          }
+
+          if (mutation.type !== 'childList') continue
+          for (const node of mutation.addedNodes) {
+            if (!(node instanceof Element)) continue
+
+            if (node instanceof HTMLAnchorElement) {
+              decorateAttributedAnchor(node, latest)
+            }
+
+            const nestedAnchors = node.querySelectorAll(
+              'a[href*="calendly.com"], a[href*="app.leadtruffle.com"]',
+            )
+            for (const nestedAnchor of nestedAnchors) {
+              decorateAttributedAnchor(nestedAnchor, latest)
+            }
+          }
+        }
+      } catch (error) {
+        reportAttributionRuntimeError('mutation_observer', error)
+      }
+    })
+
+    observer.observe(document.documentElement, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ['href'],
+    })
+
+    // @ts-ignore
+    window.__leadTruffleCalendlyObserverAttached = true
+  }
+
+  // Expose attribution helpers so the booking confirmation page can read snapshot data.
+  window.getLeadTruffleAttributionSnapshot = function () {
+    return loadStoredAttribution()
+  }
+  window.mergeLeadTruffleAttribution = function () {
+    return mergeLeadTruffleAttributionData()
+  }
+
+  window.trackCustomAnalyticsEvent = function (eventName, eventParams) {
+    try {
+      if (typeof eventName !== 'string' || eventName.length === 0) return
+      if (typeof window.gtag !== 'function') return
+
+      const safeEventParams =
+        eventParams !== null &&
+        eventParams !== undefined &&
+        typeof eventParams === 'object'
+          ? eventParams
+          : {}
+
+      window.gtag('event', eventName, safeEventParams)
+    } catch (error) {
+      console.error('Analytics event tracking failed', {
+        error,
+        eventName,
+        eventParams,
+      })
+    }
+  }
+
+  window.trackMarketingDemoClicked = function (ctaLocation) {
+    window.trackCustomAnalyticsEvent('MARKETING_DEMO_CLICKED', {
+      cta_location: ctaLocation,
+      page_path: window.location.pathname,
+    })
+  }
+
+  const bootAttributionLinkDecoration = function () {
+    // @ts-ignore
+    if (window.__leadTruffleAttributionDisabled) return
+
+    try {
+      const latestAttribution = mergeLeadTruffleAttributionData()
+      rewriteAttributedAnchors(latestAttribution)
+      observeAttributedAnchors()
+    } catch (error) {
+      reportAttributionRuntimeError('boot', error)
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bootAttributionLinkDecoration, {
+      once: true,
+    })
+  } else {
+    bootAttributionLinkDecoration()
+  }
+
+  document.addEventListener(
+    'click',
+    function (event) {
+      // @ts-ignore
+      if (window.__leadTruffleAttributionDisabled) return
+
+      const target = event.target
+      if (!(target instanceof Element)) return
+
+      const anchor = target.closest('a')
+      if (!(anchor instanceof HTMLAnchorElement)) return
+
+      const href = anchor.getAttribute('href')
+      if (!href || !isAttributionDecoratedUrl(href)) return
+
+      try {
+        const latestAttribution = mergeLeadTruffleAttributionData()
+        decorateAttributedAnchor(anchor, latestAttribution)
+      } catch (error) {
+        reportAttributionRuntimeError('click_handler', error)
+      }
+    },
+    true,
+  )
+
+  ensureGoogleTagConfigured()
+  ensureGoogleTagScriptLoaded()
+</script><meta name="facebook-domain-verification" content="mlk59ybu44651lzcbhhxjfl8vfae8q"><!-- schema --><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.leadtruffle.co/#org",
+        "name": "LeadTruffle",
+        "alternateName": "Lead Truffle",
+        "legalName": "ToolDesk Inc. DBA Leadtruffle",
+        "url": "https://www.leadtruffle.co",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://www.leadtruffle.co/#logo",
+          "url": "https://www.leadtruffle.co/large-icon.png",
+          "contentUrl": "https://www.leadtruffle.co/large-icon.png",
+          "representativeOfPage": true,
+          "width": 512,
+          "height": 512
+        },
+        "description": "AI‑first SMS and chat‑based lead qualification platform for home‑service businesses.",
+        "foundingDate": "2024-08-05",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Austin",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        },
+        "telephone": "+18339163717",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+18339163717",
+          "email": "support@leadtruffle.com",
+          "contactType": "customer support",
+          "areaServed": "US"
+        },
+        "areaServed": "US",
+        "priceRange": "$$$",
+        "sameAs": [
+          "https://x.com/leadtruffle",
+          "https://www.linkedin.com/company/leadtruffle",
+          "https://www.crunchbase.com/organization/leadtruffle",
+          "https://www.wikidata.org/wiki/Q133931093"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.leadtruffle.co/#site",
+        "url": "https://www.leadtruffle.co",
+        "name": "LeadTruffle",
+        "publisher": { "@id": "https://www.leadtruffle.co/#org" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.leadtruffle.co/search?query={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://www.leadtruffle.co/about/#page",
+        "url": "https://www.leadtruffle.co/about",
+        "name": "About LeadTruffle",
+        "isPartOf": { "@id": "https://www.leadtruffle.co/#site" },
+        "about": { "@id": "https://www.leadtruffle.co/#org" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.leadtruffle.co/#software",
+        "name": "LeadTruffle",
+        "url": "https://www.leadtruffle.co",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web browser",
+        "downloadUrl": "https://app.leadtruffle.com",
+        "description": "AI-first SMS and chat-based lead qualification platform for home service businesses. Captures leads from website visitors and missed calls using AI-powered text messaging.",
+        "publisher": { "@id": "https://www.leadtruffle.co/#org" },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Starter Plan",
+            "price": "79",
+            "priceCurrency": "USD",
+            "billingIncrement": "P1M",
+            "description": "50 leads per month with website texting features"
+          },
+          {
+            "@type": "Offer", 
+            "name": "Pro Plan",
+            "price": "199",
+            "priceCurrency": "USD",
+            "billingIncrement": "P1M",
+            "description": "200 leads per month plus missed call handling"
+          },
+          {
+            "@type": "Offer",
+            "name": "Expert Plan", 
+            "price": "389",
+            "priceCurrency": "USD",
+            "billingIncrement": "P1M",
+            "description": "500 leads per month plus missed call handling, AI Voice, and custom 10DLC phone number"
+          }
+        ],
+        "featureList": [
+          "AI-powered lead qualification via SMS",
+          "Website texting widget",
+          "Missed call handling and text-back",
+          "CRM integrations via Zapier",
+          "UTM parameter tracking",
+          "Voicemail transcription",
+          "Multi-user company accounts",
+          "API access for custom integrations"
+        ],
+        "screenshot": "https://www.leadtruffle.co/images/website-texting-backend.avif",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "17",
+          "bestRating": "5",
+          "worstRating": "4"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.leadtruffle.co/#localbusiness",
+        "name": "LeadTruffle",
+        "description": "AI-first SMS and chat-based lead qualification platform for home service businesses",
+        "url": "https://www.leadtruffle.co",
+        "telephone": "+18339163717",
+        "email": "support@leadtruffle.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Austin",
+          "addressRegion": "TX", 
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          {
+            "@type": "Country",
+            "name": "United States"
+          },
+          {
+            "@type": "Country", 
+            "name": "Canada"
+          }
+        ],
+        "serviceType": [
+          "Lead Generation Software",
+          "AI Lead Qualification",
+          "SMS Marketing Platform",
+          "Business Communication Software"
+        ],
+        "priceRange": "$229-$629 per month",
+        "paymentAccepted": "Credit Card",
+        "currenciesAccepted": "USD",
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "LeadTruffle Plans",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Website Lead Capture",
+                "description": "AI-powered website texting widget for lead capture"
+              }
+            },
+            {
+              "@type": "Offer", 
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Missed Call Handling",
+                "description": "AI follow-up for missed business calls via SMS"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service", 
+                "name": "Lead Qualification",
+                "description": "AI-powered lead qualification through SMS conversations"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+</script><!-- rb2b - Optimized loading --><script>
+  // Load RB2B after page load to avoid blocking
+  window.addEventListener('load', function() {
+    !(function () {
+      var reb2b = (window.reb2b = window.reb2b || [])
+      if (reb2b.invoked) return
+      reb2b.invoked = true
+      reb2b.methods = ['identify', 'collect']
+      reb2b.factory = function (method) {
+        return function () {
+          var args = Array.prototype.slice.call(arguments)
+          args.unshift(method)
+          reb2b.push(args)
+          return reb2b
+        }
+      }
+      for (var i = 0; i < reb2b.methods.length; i++) {
+        var key = reb2b.methods[i]
+        reb2b[key] = reb2b.factory(key)
+      }
+      reb2b.load = function (key) {
+        var script = document.createElement('script')
+        script.type = 'text/javascript'
+        script.async = true
+        script.src =
+          'https://s3-us-west-2.amazonaws.com/b2bjsstore/b/' +
+          key +
+          '/4N210H5QXE6Z.js.gz'
+        var first = document.getElementsByTagName('script')[0]
+        first.parentNode.insertBefore(script, first)
+      }
+      reb2b.SNIPPET_VERSION = '1.0.1'
+      reb2b.load('4N210H5QXE6Z')
+    })()
+  })
+</script><!-- rewardful - Optimized loading --><script>
+  // Load Rewardful after page load
+  window.addEventListener('load', function() {
+    ;(function (w, r) {
+      w._rwq = r
+      w[r] =
+        w[r] ||
+        function () {
+          ;(w[r].q = w[r].q || []).push(arguments)
+        }
+    })(window, 'rewardful')
+    
+    // Dynamically load the script
+    var script = document.createElement('script')
+    script.async = true
+    script.src = 'https://r.wdfl.co/rw.js'
+    script.setAttribute('data-rewardful', 'f8f474')
+    document.head.appendChild(script)
+  })
+</script><!-- Twitter conversion tracking base code --><script>
+  !(function (e, t, n, s, u, a) {
+    e.twq ||
+      ((s = e.twq =
+        function () {
+          s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments)
+        }),
+      (s.version = '1.1'),
+      (s.queue = []),
+      (u = t.createElement(n)),
+      (u.async = !0),
+      (u.src = 'https://static.ads-twitter.com/uwt.js'),
+      (a = t.getElementsByTagName(n)[0]),
+      a.parentNode.insertBefore(u, a))
+  })(window, document, 'script')
+  twq('config', 'ohsf3')
+</script><!-- End Twitter conversion tracking base code --><!-- Meta Pixel Code --><script>
+  !(function (f, b, e, v, n, t, s) {
+    if (f.fbq) return
+    n = f.fbq = function () {
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    }
+    if (!f._fbq) f._fbq = n
+    n.push = n
+    n.loaded = !0
+    n.version = '2.0'
+    n.queue = []
+    t = b.createElement(e)
+    t.async = !0
+    t.src = v
+    s = b.getElementsByTagName(e)[0]
+    s.parentNode.insertBefore(t, s)
+  })(
+    window,
+    document,
+    'script',
+    'https://connect.facebook.net/en_US/fbevents.js',
+  )
+  fbq('init', '988068520189017')
+  fbq('track', 'PageView')
+</script><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=988068520189017&ev=PageView&noscript=1" data-astro-cid-y4licvga></noscript><!-- End Meta Pixel Code --><!-- Ahrefs Analytics - Optimized loading --><script>
+  // Load Ahrefs Analytics after page load
+  window.addEventListener('load', function() {
+    var script = document.createElement('script')
+    script.async = true
+    script.src = 'https://analytics.ahrefs.com/analytics.js'
+    script.setAttribute('data-key', 'seGCpIZq+3+OoiRl7nlqAQ')
+    document.head.appendChild(script)
+  })
+</script>  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "@id": "https://www.leadtruffle.co/#product",
+            "name": "LeadTruffle Speed-to-Lead Platform",
+            "description": "Speed-to-lead platform for home service pros: AI voice and SMS answer missed calls, Google LSA, Thumbtack, Yelp, and Facebook leads in seconds using your 10DLC number and book jobs into your CRM.",
+            "image": [
+              "https://www.leadtruffle.co/opengraph.jpg",
+              "https://www.leadtruffle.co/images/phone-convo-view-voice-1-min.avif"
+            ],
+            "brand": {
+              "@type": "Brand",
+              "@id": "https://www.leadtruffle.co/#org",
+              "name": "LeadTruffle",
+              "logo": { "@id": "https://www.leadtruffle.co/#logo" }
+            },
+            "url": "https://www.leadtruffle.co/",
+            "audience": {
+              "@type": "Audience",
+              "name": "Home service businesses",
+              "audienceType": "Home service businesses"
+            },
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "offers": {
+              "@type": "Offer",
+              "price": "220",
+              "priceCurrency": "USD",
+              "name": "Essential Plan",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.leadtruffle.co/pricing",
+              "shippingDetails": [
+                {
+                  "@type": "OfferShippingDetails",
+                  "shippingRate": {
+                    "@type": "MonetaryAmount",
+                    "value": "229",
+                    "currency": "USD"
+                  },
+                  "shippingDestination": {
+                    "@type": "DefinedRegion",
+                    "addressCountry": {
+                      "@type": "Country",
+                      "name": "US"
+                    }
+                  },
+                  "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 0,
+                      "maxValue": 0,
+                      "unitCode": "d"
+                    },
+                    "transitTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 0,
+                      "maxValue": 0,
+                      "unitCode": "d"
+                    }
+                  }
+                }
+              ],
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+              }
+            },
+            "featureList": [
+              "AI voice agent for missed calls",
+              "Missed call text-back via 10DLC",
+              "Instant response for Google LSA, Thumbtack, Yelp, and Facebook Lead Ads",
+              "Speed-to-lead routing and booking into CRM",
+              "Zapier, webhooks, and analytics integrations"
+            ]
+          }
+        ]
+      }
+    </script> <style>:root{--primary-color: #0076e8;--accent-color: #005bb5;--background-color: #f4f9fc;--text-color: #222;--accent: var(--primary-color);--accent-dark: var(--accent-color);--black: 0, 0, 0;--gray: 107, 114, 128;--gray-light: 243, 244, 246;--gray-dark: var(--text-color);--gray-gradient: rgba(var(--gray-light), 50%), var(--background-color);--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%)}*{box-sizing:border-box}html{overflow-x:hidden;-webkit-text-size-adjust:100%}body{overflow-x:hidden;word-wrap:break-word;overflow-wrap:break-word}img{max-width:100%;height:auto}@font-face{font-family:Inter;src:url(/font/Inter/Inter-VariableFont_opsz,wght.ttf) format("truetype-variations");font-weight:100 900;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url(/font/Inter/Inter-Italic-VariableFont_opsz,wght.ttf) format("truetype-variations");font-weight:100 900;font-style:italic;font-display:swap}body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;margin:0;padding:0;text-align:left;background:var(--background-color);word-wrap:break-word;overflow-wrap:break-word;color:var(--text-color);font-size:16px;line-height:1.6}main{width:100%;max-width:1400px;margin:0 auto;padding:0}h1,h2,h3,h4,h5,h6{margin:0 0 .5rem;color:var(--text-color);line-height:1.2}h1{font-size:3.052em}h2{font-size:2.441em}h3{font-size:1.953em}h4{font-size:1.563em}h5{font-size:1.25em}h6{margin:0 0 .5rem;color:var(--text-color);line-height:1.2}strong,b{font-weight:700}a{color:var(--primary-color)}a:hover{color:var(--accent-color)}p{margin-bottom:1em}.prose p{margin-bottom:2em}textarea{width:100%;font-size:16px}input{font-size:16px}table{width:100%}img{max-width:100%;height:auto;border-radius:8px}code{padding:2px 5px;background-color:rgba(var(--gray-light),.5);border-radius:2px}pre{padding:1.5em;border-radius:8px}pre>code{all:unset}blockquote{border-left:4px solid var(--accent-color);padding:0 0 0 20px;margin:0;font-size:1.333em}hr{border:none;border-top:1px solid rgb(var(--gray-light))}@media (max-width: 1024px){body{font-size:18px}main{padding:.5em}}.sr-only{border:0;padding:0;margin:0;position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);clip-path:inset(50%);white-space:nowrap}[data-astro-cid-y4licvga]{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+</style>
+<link rel="stylesheet" href="/_astro/index.B8dwu9rk.css">
+<link rel="stylesheet" href="/_astro/_slug_.vJPgSSL2.css">
+<style>.breadcrumb-nav[data-astro-cid-qaanghzh]{padding:1rem 0;margin-bottom:1rem}.breadcrumb-list[data-astro-cid-qaanghzh]{display:flex;flex-wrap:wrap;align-items:center;list-style:none;margin:0;padding:0;font-size:.875rem;color:#6b7280}.breadcrumb-item[data-astro-cid-qaanghzh]{display:flex;align-items:center}.breadcrumb-link[data-astro-cid-qaanghzh]{color:#6b7280;text-decoration:none;transition:color .2s ease}.breadcrumb-link[data-astro-cid-qaanghzh]:hover{color:var(--primary-color);text-decoration:underline}.breadcrumb-separator[data-astro-cid-qaanghzh]{margin:0 .5rem;color:#d1d5db;font-weight:300}.breadcrumb-current[data-astro-cid-qaanghzh]{color:var(--text-color);font-weight:500}@media (max-width: 768px){.breadcrumb-nav[data-astro-cid-qaanghzh]{padding:.75rem 0}.breadcrumb-list[data-astro-cid-qaanghzh]{font-size:.8rem}.breadcrumb-separator[data-astro-cid-qaanghzh]{margin:0 .375rem}}
+.page-content[data-astro-cid-3zbxo6iv]{width:100%;max-width:1400px;margin:auto;padding:0;color:rgb(var(--gray-dark))}.title[data-astro-cid-3zbxo6iv]{margin-bottom:1em;padding:1em 0;text-align:center;line-height:1}.title[data-astro-cid-3zbxo6iv] h1[data-astro-cid-3zbxo6iv]{margin:0 0 .5em}
+.as-seen-on-section[data-astro-cid-bfbg5aa6]{background:#fff;margin-bottom:2em}.as-seen-on-container[data-astro-cid-bfbg5aa6]{max-width:1300px;margin:0 auto;padding-top:.95em;padding-bottom:.4em;text-align:center}.as-seen-on-section[data-astro-cid-bfbg5aa6] h3[data-astro-cid-bfbg5aa6]{margin:0 0 .75em;color:#94a3b8;font-size:.78em;font-family:Inter,sans-serif;font-weight:700;line-height:1;letter-spacing:.16em;text-transform:uppercase}.as-seen-on-row[data-astro-cid-bfbg5aa6]{display:flex;align-items:center;justify-content:center;gap:.9em}.as-seen-on-rail[data-astro-cid-bfbg5aa6]{width:auto;height:28px;flex-shrink:0;opacity:.45}.as-seen-on-rail-right[data-astro-cid-bfbg5aa6]{transform:scaleX(-1)}.as-seen-on-grid[data-astro-cid-bfbg5aa6]{display:flex;align-items:center;justify-content:center;gap:.9em;flex-wrap:wrap}.as-seen-on-card[data-astro-cid-bfbg5aa6]{display:flex;align-items:center;justify-content:center;min-height:40px;transition:transform .2s ease,opacity .2s ease}.as-seen-on-card[data-astro-cid-bfbg5aa6]:hover{transform:translateY(-1px);opacity:1}.as-seen-on-card[data-astro-cid-bfbg5aa6] img[data-astro-cid-bfbg5aa6]{width:100%;height:auto;max-width:146px;object-fit:contain;filter:grayscale(1) contrast(1.05);opacity:.68}@media (max-width: 768px){.as-seen-on-section[data-astro-cid-bfbg5aa6]{padding:0 1em;margin-bottom:1.5em}.as-seen-on-row[data-astro-cid-bfbg5aa6]{gap:.55em}.as-seen-on-grid[data-astro-cid-bfbg5aa6]{gap:.65em}.as-seen-on-rail[data-astro-cid-bfbg5aa6]{height:22px}.as-seen-on-card[data-astro-cid-bfbg5aa6] img[data-astro-cid-bfbg5aa6]{max-width:126px}}@media (max-width: 520px){.as-seen-on-row[data-astro-cid-bfbg5aa6]{gap:.5em}.as-seen-on-rail[data-astro-cid-bfbg5aa6]{display:none}.as-seen-on-grid[data-astro-cid-bfbg5aa6]{gap:.6em}.as-seen-on-card[data-astro-cid-bfbg5aa6] img[data-astro-cid-bfbg5aa6]{max-width:110px}}
+</style>
+<link rel="stylesheet" href="/_astro/index.B8NsYryT.css"></head> <body data-astro-cid-3zbxo6iv> <header data-astro-cid-3ef6ksr2> <nav data-astro-cid-3ef6ksr2> <a href="/" class="logo-link" data-astro-cid-3ef6ksr2> <img src="/logo.svg" alt="LeadTruffle | 24/7 AI Lead Qualification Tools for Home Service Contractors logo" class="logo-image" data-astro-cid-3ef6ksr2> </a> <!-- Desktop Navigation --> <div class="internal-links" data-astro-cid-3ef6ksr2> <a href="/#how-it-works" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> How It Works </a>  <!-- Solutions Dropdown --> <div class="dropdown-container" data-astro-cid-3ef6ksr2> <button class="dropdown-trigger" id="solutionsDropdown" data-astro-cid-3ef6ksr2>
+Solutions
+<svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-3ef6ksr2> <polyline points="6,9 12,15 18,9" data-astro-cid-3ef6ksr2></polyline> </svg> </button> <div class="dropdown-menu" id="solutionsMenu" data-astro-cid-3ef6ksr2> <a href="/features/website-chat-widget/" class="dropdown-item" data-astro-cid-3ef6ksr2>Chat Widget</a> <a href="/features/popup-widget/" class="dropdown-item" data-astro-cid-3ef6ksr2>Popup</a> <a href="/features/embedded-form/" class="dropdown-item" data-astro-cid-3ef6ksr2>Lead Form</a> <a href="/features/missed-call-text-back/" class="dropdown-item" data-astro-cid-3ef6ksr2>Missed Call Text Back</a> <a href="/features/ai-voice-agent/" class="dropdown-item" data-astro-cid-3ef6ksr2>AI Voice</a> <a href="/features/ai-email-campaigns/" class="dropdown-item" data-astro-cid-3ef6ksr2>AI Email Campaigns</a> <a href="/features/lead-routing/" class="dropdown-item" data-astro-cid-3ef6ksr2>Lead Routing</a> <a href="/features/google-lsa/" class="dropdown-item" data-astro-cid-3ef6ksr2>Google LSA</a> <a href="/features/yelp/" class="dropdown-item" data-astro-cid-3ef6ksr2>Yelp</a> <a href="/features/thumbtack/" class="dropdown-item" data-astro-cid-3ef6ksr2>Thumbtack</a> </div> </div> <a href="/blog/" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Blog </a>  <!-- Resources Dropdown --> <div class="dropdown-container" data-astro-cid-3ef6ksr2> <button class="dropdown-trigger" id="resourcesDropdown" data-astro-cid-3ef6ksr2>
+Resources
+<svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-3ef6ksr2> <polyline points="6,9 12,15 18,9" data-astro-cid-3ef6ksr2></polyline> </svg> </button> <div class="dropdown-menu" id="resourcesMenu" data-astro-cid-3ef6ksr2> <a href="/business-recommendations/" class="dropdown-item" data-astro-cid-3ef6ksr2>AI Recommendations Checker</a> <a href="/tools/ai-business-knowledge/" class="dropdown-item" data-astro-cid-3ef6ksr2>AI Business Knowledge Checker</a> <a href="/integrations/" class="dropdown-item" data-astro-cid-3ef6ksr2>Integrations</a> <a href="/customers/" class="dropdown-item" data-astro-cid-3ef6ksr2>Customers</a> <a href="/press-releases/" class="dropdown-item" data-astro-cid-3ef6ksr2>Press Releases</a> <a href="/agencies/" class="dropdown-item" data-astro-cid-3ef6ksr2>Agencies</a> <a href="/agency-directory/" class="dropdown-item" data-astro-cid-3ef6ksr2>Agency Directory</a> <a href="/product-comparisons/" class="dropdown-item" data-astro-cid-3ef6ksr2>Comparisons</a> <a href="/tools/roi-calculator/" class="dropdown-item" data-astro-cid-3ef6ksr2>ROI Calculator</a> <a href="https://help.leadtruffle.co/" target="_blank" class="dropdown-item" data-astro-cid-3ef6ksr2>Help Center</a> <a href="https://reviewtools.leadtruffle.com/?utm_source=wwwleadtruffleco&utm_medium=website&utm_campaign=website" target="_blank" class="dropdown-item" data-astro-cid-3ef6ksr2>Review Image Generator</a> </div> </div> <a href="/pricing/" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Pricing </a>  </div> <!-- Desktop CTA --> <div class="cta-section" data-astro-cid-3ef6ksr2> <a class="btn btn-outline btn-sm" href="https://app.leadtruffle.com?utm_source=wwwleadtruffleco&utm_medium=website&utm_campaign=website" data-astro-cid-3ef6ksr2="true" data-astro-cid-vnzlvqnm> <img src="/images/login-icon.png" alt="Login icon" class="login-icon" data-astro-cid-3ef6ksr2>
+Log In
+</a> <a class="btn btn-primary btn-sm" href="https://calendly.com/leadtruffle/demo-website?utm_source=wwwleadtruffleco&utm_medium=website&utm_campaign=demo&utm_content=navbar" onclick="trackMarketingDemoClicked('header-desktop-talk-to-us')" data-astro-cid-3ef6ksr2="true" data-astro-cid-vnzlvqnm>
+Talk to Us
+</a> </div> <!-- Mobile Menu Button --> <button class="mobile-menu-btn" id="mobileMenuBtn" data-astro-cid-3ef6ksr2> <span class="hamburger-line" data-astro-cid-3ef6ksr2></span> <span class="hamburger-line" data-astro-cid-3ef6ksr2></span> <span class="hamburger-line" data-astro-cid-3ef6ksr2></span> </button> </nav> <!-- Mobile Menu --> <div class="mobile-menu" id="mobileMenu" data-astro-cid-3ef6ksr2> <div class="mobile-menu-content" data-astro-cid-3ef6ksr2> <a href="/#how-it-works" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> How It Works </a>  <!-- Mobile Solutions Section --> <div class="mobile-resources" data-astro-cid-3ef6ksr2> <button class="mobile-resources-trigger" id="mobileSolutionsBtn" data-astro-cid-3ef6ksr2>
+Solutions
+<svg class="mobile-dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-3ef6ksr2> <polyline points="6,9 12,15 18,9" data-astro-cid-3ef6ksr2></polyline> </svg> </button> <div class="mobile-resources-menu" id="mobileSolutionsMenu" data-astro-cid-3ef6ksr2> <a href="/features/website-chat-widget/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Chat Widget</a> <a href="/features/popup-widget/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Popup</a> <a href="/features/embedded-form/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Lead Form</a> <a href="/features/missed-call-text-back/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Missed Call Text Back</a> <a href="/features/ai-voice-agent/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>AI Voice</a> <a href="/features/ai-email-campaigns/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>AI Email Campaigns</a> <a href="/features/lead-routing/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Lead Routing</a> <a href="/features/google-lsa/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Google LSA</a> <a href="/features/yelp/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Yelp</a> <a href="/features/thumbtack/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Thumbtack</a> </div> </div> <a href="/blog/" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Blog </a>  <!-- Mobile Resources Section --> <div class="mobile-resources" data-astro-cid-3ef6ksr2> <button class="mobile-resources-trigger" id="mobileResourcesBtn" data-astro-cid-3ef6ksr2>
+Resources
+<svg class="mobile-dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-3ef6ksr2> <polyline points="6,9 12,15 18,9" data-astro-cid-3ef6ksr2></polyline> </svg> </button> <div class="mobile-resources-menu" id="mobileResourcesMenu" data-astro-cid-3ef6ksr2> <a href="/business-recommendations/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>AI Recommendations Checker</a> <a href="/tools/ai-business-knowledge/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>AI Business Knowledge Checker</a> <a href="/integrations/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Integrations</a> <a href="/customers/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Customers</a> <a href="/press-releases/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Press Releases</a> <a href="/agencies/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Agencies</a> <a href="/agency-directory/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Agency Directory</a> <a href="/product-comparisons/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Comparisons</a> <a href="/tools/roi-calculator/" class="mobile-resource-item" data-astro-cid-3ef6ksr2>ROI Calculator</a> <a href="https://help.leadtruffle.co/" target="_blank" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Help Center</a> <a href="https://reviewtools.leadtruffle.com/?utm_source=wwwleadtruffleco&utm_medium=website&utm_campaign=website" target="_blank" class="mobile-resource-item" data-astro-cid-3ef6ksr2>Review Image Generator</a> </div> </div> <a href="/pricing/" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Pricing </a>  <div class="mobile-cta-section" data-astro-cid-3ef6ksr2> <a href="https://app.leadtruffle.com?utm_source=wwwleadtruffleco&utm_medium=website&utm_campaign=website" class="mobile-login-btn" data-astro-cid-3ef6ksr2> <img src="/images/login-icon.png" alt="Login icon" class="login-icon" data-astro-cid-3ef6ksr2>
+Log In
+</a> <a href="https://calendly.com/leadtruffle/demo-website?utm_source=wwwleadtruffleco&utm_medium=website&utm_campaign=demo&utm_content=navbar" class="mobile-cta-btn" onclick="trackMarketingDemoClicked('header-mobile-talk-to-us')" data-astro-cid-3ef6ksr2>
+Talk to Us
+</a> </div> </div> </div> </header>  <script>
+  function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu')
+    const menuBtn = document.getElementById('mobileMenuBtn')
+
+    if (!mobileMenu || !menuBtn) return
+
+    mobileMenu.classList.toggle('active')
+    menuBtn.classList.toggle('active')
+
+    // Prevent body scroll when menu is open
+    if (mobileMenu.classList.contains('active')) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+  }
+
+  function toggleSolutionsDropdown() {
+    const dropdown = document.getElementById('solutionsDropdown')
+    const menu = document.getElementById('solutionsMenu')
+
+    if (!dropdown || !menu) return
+
+    dropdown.classList.toggle('active')
+    menu.classList.toggle('active')
+  }
+
+  function toggleResourcesDropdown() {
+    const dropdown = document.getElementById('resourcesDropdown')
+    const menu = document.getElementById('resourcesMenu')
+
+    if (!dropdown || !menu) return
+
+    dropdown.classList.toggle('active')
+    menu.classList.toggle('active')
+  }
+
+  function toggleMobileSolutions() {
+    const trigger = document.getElementById('mobileSolutionsBtn')
+    const menu = document.getElementById('mobileSolutionsMenu')
+
+    if (!trigger || !menu) return
+
+    trigger.classList.toggle('active')
+    menu.classList.toggle('active')
+  }
+
+  function toggleMobileResources() {
+    const trigger = document.getElementById('mobileResourcesBtn')
+    const menu = document.getElementById('mobileResourcesMenu')
+
+    if (!trigger || !menu) return
+
+    trigger.classList.toggle('active')
+    menu.classList.toggle('active')
+  }
+
+  // Initialize when DOM is loaded
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuBtn = document.getElementById('mobileMenuBtn')
+    const solutionsDropdown = document.getElementById('solutionsDropdown')
+    const resourcesDropdown = document.getElementById('resourcesDropdown')
+    const mobileSolutionsBtn = document.getElementById('mobileSolutionsBtn')
+    const mobileResourcesBtn = document.getElementById('mobileResourcesBtn')
+
+    if (menuBtn) {
+      menuBtn.addEventListener('click', toggleMobileMenu)
+    }
+
+    if (solutionsDropdown) {
+      solutionsDropdown.addEventListener('click', toggleSolutionsDropdown)
+    }
+
+    if (resourcesDropdown) {
+      resourcesDropdown.addEventListener('click', toggleResourcesDropdown)
+    }
+
+    if (mobileSolutionsBtn) {
+      mobileSolutionsBtn.addEventListener('click', toggleMobileSolutions)
+    }
+
+    if (mobileResourcesBtn) {
+      mobileResourcesBtn.addEventListener('click', toggleMobileResources)
+    }
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function (e) {
+      const mobileMenu = document.getElementById('mobileMenu')
+      const menuBtn = document.getElementById('mobileMenuBtn')
+      const solutionsDropdown = document.getElementById('solutionsDropdown')
+      const solutionsMenu = document.getElementById('solutionsMenu')
+      const resourcesDropdown = document.getElementById('resourcesDropdown')
+      const resourcesMenu = document.getElementById('resourcesMenu')
+
+      // Close mobile menu
+      if (
+        mobileMenu &&
+        menuBtn &&
+        mobileMenu.classList.contains('active') &&
+        !mobileMenu.contains(e.target) &&
+        !menuBtn.contains(e.target)
+      ) {
+        toggleMobileMenu()
+      }
+
+      // Close solutions dropdown
+      if (
+        solutionsDropdown &&
+        solutionsMenu &&
+        solutionsMenu.classList.contains('active') &&
+        !solutionsDropdown.contains(e.target) &&
+        !solutionsMenu.contains(e.target)
+      ) {
+        toggleSolutionsDropdown()
+      }
+
+      // Close resources dropdown
+      if (
+        resourcesDropdown &&
+        resourcesMenu &&
+        resourcesMenu.classList.contains('active') &&
+        !resourcesDropdown.contains(e.target) &&
+        !resourcesMenu.contains(e.target)
+      ) {
+        toggleResourcesDropdown()
+      }
+    })
+
+    // Close menu when clicking on a link
+    const mobileLinks = document.querySelectorAll(
+      '.mobile-menu-content a:not(.mobile-resource-item)',
+    )
+    mobileLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        const mobileMenu = document.getElementById('mobileMenu')
+        if (mobileMenu && mobileMenu.classList.contains('active')) {
+          toggleMobileMenu()
+        }
+      })
+    })
+  })
+</script> <main data-astro-cid-3zbxo6iv> <article class="page-content" data-astro-cid-3zbxo6iv>      <section class="hero-section" data-astro-cid-j7pv25f6> <div class="hero-container" data-astro-cid-j7pv25f6> <div class="hero-content-wrapper" data-astro-cid-j7pv25f6> <div class="hero-content" data-astro-cid-j7pv25f6> <div class="hero-eyebrow" data-astro-cid-j7pv25f6>Built For Home Service Pros</div> <h1 class="hero-title" data-astro-cid-j7pv25f6>
+Book More Jobs with <span class="highlight" data-astro-cid-j7pv25f6>AI Speed-to-Lead</span>
+for Home Service Pros.
+</h1> <p class="hero-description" data-astro-cid-j7pv25f6>
+LeadTruffle connects all your lead sources into a unified inbox
+              and instantly qualifies every customer with AI, books jobs into
+              your CRM, and keeps every lead organized so nothing slips through the cracks.
+</p> <div class="hero-cta" data-astro-cid-j7pv25f6> <a class="btn btn-primary btn-xl" href="https://calendly.com/leadtruffle/demo-website?utm_source=wwwleadtruffleco&utm_medium=website&utm_campaign=demo&utm_content=homepage" onclick="trackMarketingDemoClicked('home-hero-get-demo')" data-astro-cid-j7pv25f6="true" data-astro-cid-vnzlvqnm>
+Get Demo
+</a> </div> <div class="hero-icons-row" data-astro-cid-j7pv25f6> <div class="icon-block" data-astro-cid-j7pv25f6> <p class="icon-block-title" data-astro-cid-j7pv25f6>Integrate your tools</p> <div class="icon-block-icons" data-astro-cid-j7pv25f6> <img src="/images/integration-logo/hcp-logo-transparent-bg.webp" alt="Housecall Pro" loading="lazy" width="44" height="44" data-astro-cid-j7pv25f6> <img src="/images/integration-logo/jobber-logo.png" alt="Jobber" loading="lazy" width="44" height="44" data-astro-cid-j7pv25f6> <img src="/images/integration-logo/service-titan-icon_100px.png" alt="ServiceTitan" loading="lazy" width="44" height="44" data-astro-cid-j7pv25f6> </div> </div> <div class="icon-block icon-block--channels" data-astro-cid-j7pv25f6> <p class="icon-block-title" data-astro-cid-j7pv25f6>Maximize your channels</p> <div class="icon-block-icons" data-astro-cid-j7pv25f6> <img src="/images/integration-logo/transparent-bg-icons/Google__G__logo.svg" alt="Google" loading="lazy" width="40" height="40" data-astro-cid-j7pv25f6> <img src="/images/integration-logo/transparent-bg-icons/thumbtack_icon.svg" alt="Thumbtack" loading="lazy" width="40" height="40" data-astro-cid-j7pv25f6> <img src="/images/integration-logo/transparent-bg-icons/Facebook_f_logo_2021.svg" alt="Facebook" loading="lazy" width="38" height="38" data-astro-cid-j7pv25f6> <img src="/images/integration-logo/transparent-bg-icons/Yelp.svg" alt="Yelp" loading="lazy" width="40" height="40" data-astro-cid-j7pv25f6> <img src="/images/integration-logo/transparent-bg-icons/angi-icon.svg" alt="Angi" loading="lazy" width="40" height="40" data-astro-cid-j7pv25f6> </div> </div> </div> </div> </div> <!-- Phone image that bursts out --> <img src="/images/phone-convo-view-voice-1-min.avif" alt="AI conversation example on mobile device" class="phone-conversation-image" width="368" height="800" loading="eager" data-astro-cid-j7pv25f6> </div> </section>  <section class="social-proof-section" data-astro-cid-j7pv25f6> <div class="social-proof-text" data-astro-cid-j7pv25f6> <div class="social-proof-badge" data-astro-cid-j7pv25f6> <span class="badge-stars" data-astro-cid-j7pv25f6>⭐⭐⭐</span> <span class="badge-text" data-astro-cid-j7pv25f6>Trusted by Top Home Service Pros</span> <span class="badge-stars" data-astro-cid-j7pv25f6>⭐⭐⭐</span> </div> </div> <div class="social-proof-container" data-astro-cid-j7pv25f6> <div class="scrolling-logos" data-astro-cid-j7pv25f6> <div class="logos-track" data-astro-cid-j7pv25f6> <img src="/images/company-logo/evolution-moving.png" alt="Evolution Moving" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/proven-plumbing.png" alt="Proven Plumbing" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/ninja-hvac.png" alt="Ninja HVAC" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/cincinnati-painting-co.png" alt="Cincinnati Painting Co" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/bc-tree-service.png" alt="BC Tree Service" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/deckscapes-of-va.png" alt="Deckscapes of VA" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/rdu-tv-mounting.png" alt="RDU TV Mounting" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/the-autollama.png" alt="The Auto Llama" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/welovejunk.png" alt="We Love Junk" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/dogdrop.png" alt="DogDrop" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/grotto-climbing-yoga.png" alt="Grotto Climbing Yoga" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/mcswain.png" alt="MC Swain" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <!-- Duplicate for seamless loop --> <img src="/images/company-logo/evolution-moving.png" alt="Evolution Moving" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/proven-plumbing.png" alt="Proven Plumbing" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/ninja-hvac.png" alt="Ninja HVAC" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/cincinnati-painting-co.png" alt="Cincinnati Painting Co" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/bc-tree-service.png" alt="BC Tree Service" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/deckscapes-of-va.png" alt="Deckscapes of VA" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/rdu-tv-mounting.png" alt="RDU TV Mounting" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/the-autollama.png" alt="The Auto Llama" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/welovejunk.png" alt="We Love Junk" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> <img src="/images/company-logo/dogdrop.png" alt="DogDrop" class="logo-item" loading="lazy" width="120" height="70" data-astro-cid-j7pv25f6> </div> </div> </div> </section>  <section class="testimonials-section" data-astro-cid-aadlzisc> <div class="testimonials-container" data-astro-cid-aadlzisc> <p class="testimonials-eyebrow" data-astro-cid-aadlzisc>Real Results</p> <h2 data-astro-cid-aadlzisc>Trusted by <span class="highlight" data-astro-cid-aadlzisc>Home Service Pros</span></h2> <div class="testimonials-carousel" data-astro-cid-aadlzisc> <button class="carousel-control prev" type="button" aria-label="Previous testimonials" data-testimonial-prev data-astro-cid-aadlzisc> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-aadlzisc> <polyline points="15 18 9 12 15 6" data-astro-cid-aadlzisc></polyline> </svg> </button> <div class="carousel-window" data-astro-cid-aadlzisc> <div class="carousel-track" data-testimonial-track data-astro-cid-aadlzisc> <article class="testimonial-card" data-astro-cid-aadlzisc> <div class="testimonial-content" data-astro-cid-aadlzisc> <div class="testimonial-stars" aria-label="5 star rating" data-astro-cid-aadlzisc> <span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span> </div> <blockquote class="testimonial-quote" data-astro-cid-aadlzisc>LeadTruffle gives me peace of mind knowing no missed call turns into a missed customer. The AI voicemail and chatbot keep momentum with website visitors and help us capture more clients. It provides huge value for any small business.</blockquote> </div> <div class="testimonial-author" data-astro-cid-aadlzisc> <img src="/images/testimonials/mike-staples-the-roof-resource.jpg" alt="Mike Staples" loading="lazy" width="48" height="48" class="author-avatar" data-astro-cid-aadlzisc> <div class="author-info" data-astro-cid-aadlzisc> <p class="author-name" data-astro-cid-aadlzisc>Mike Staples</p> <p class="author-role" data-astro-cid-aadlzisc>The Roof Resource Central Texas</p> </div> </div> </article><article class="testimonial-card" data-astro-cid-aadlzisc> <div class="testimonial-content" data-astro-cid-aadlzisc> <div class="testimonial-stars" aria-label="5 star rating" data-astro-cid-aadlzisc> <span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span> </div> <blockquote class="testimonial-quote" data-astro-cid-aadlzisc>LeadTruffle answers all our calls and texts, filters the junk, and only sends us what matters. It has saved us a ton of time and eliminated interruptions. Bryan has been incredible to work with, always quick and helpful. Highly recommend.</blockquote> </div> <div class="testimonial-author" data-astro-cid-aadlzisc> <img src="/images/testimonials/josh-hallett-yardworx.jpg" alt="Josh Hallett" loading="lazy" width="48" height="48" class="author-avatar" data-astro-cid-aadlzisc> <div class="author-info" data-astro-cid-aadlzisc> <p class="author-name" data-astro-cid-aadlzisc>Josh Hallett</p> <p class="author-role" data-astro-cid-aadlzisc>Yardworx Lawn And Landscape</p> </div> </div> </article><article class="testimonial-card" data-astro-cid-aadlzisc> <div class="testimonial-content" data-astro-cid-aadlzisc> <div class="testimonial-stars" aria-label="5 star rating" data-astro-cid-aadlzisc> <span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span> </div> <blockquote class="testimonial-quote" data-astro-cid-aadlzisc>We were hesitant at first, but LeadTruffle quickly proved itself. The AI responses sound natural and on-brand, and it consistently captures more website leads. It solves a real problem for us and we highly recommend it.</blockquote> </div> <div class="testimonial-author" data-astro-cid-aadlzisc> <img src="/images/testimonials/donna-galbraith-koala-insulation.jpg" alt="Donna Galbraith" loading="lazy" width="48" height="48" class="author-avatar" data-astro-cid-aadlzisc> <div class="author-info" data-astro-cid-aadlzisc> <p class="author-name" data-astro-cid-aadlzisc>Donna Galbraith</p> <p class="author-role" data-astro-cid-aadlzisc>Koala Insulation Of Chattanooga</p> </div> </div> </article><article class="testimonial-card" data-astro-cid-aadlzisc> <div class="testimonial-content" data-astro-cid-aadlzisc> <div class="testimonial-stars" aria-label="5 star rating" data-astro-cid-aadlzisc> <span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span> </div> <blockquote class="testimonial-quote" data-astro-cid-aadlzisc>LeadTruffle&#39;s text-to-chat widget completely transformed our lead flow. Information gathering is automated, unqualified leads are filtered out, and customers book themselves. It feels like having a full-time qualifier working around the clock.</blockquote> </div> <div class="testimonial-author" data-astro-cid-aadlzisc> <img src="/images/testimonials/lee-mcdowell-car-charger-specialists.jpg" alt="Lee McDowell" loading="lazy" width="48" height="48" class="author-avatar" data-astro-cid-aadlzisc> <div class="author-info" data-astro-cid-aadlzisc> <p class="author-name" data-astro-cid-aadlzisc>Lee McDowell</p> <p class="author-role" data-astro-cid-aadlzisc>Car Charger Specialists</p> </div> </div> </article><article class="testimonial-card" data-astro-cid-aadlzisc> <div class="testimonial-content" data-astro-cid-aadlzisc> <div class="testimonial-stars" aria-label="5 star rating" data-astro-cid-aadlzisc> <span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span> </div> <blockquote class="testimonial-quote" data-astro-cid-aadlzisc>LeadTruffle instantly connects website visitors to the right information and saves our team hours each week. It answers questions immediately and creates a great first impression. It truly feels like an extra team member available all day, every day.</blockquote> </div> <div class="testimonial-author" data-astro-cid-aadlzisc> <img src="/images/testimonials/geoff-goodwill-flux-electric.jpg" alt="Geoff Goodwill" loading="lazy" width="48" height="48" class="author-avatar" data-astro-cid-aadlzisc> <div class="author-info" data-astro-cid-aadlzisc> <p class="author-name" data-astro-cid-aadlzisc>Geoff Goodwill</p> <p class="author-role" data-astro-cid-aadlzisc>Flux Electric</p> </div> </div> </article><article class="testimonial-card" data-astro-cid-aadlzisc> <div class="testimonial-content" data-astro-cid-aadlzisc> <div class="testimonial-stars" aria-label="5 star rating" data-astro-cid-aadlzisc> <span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span> </div> <blockquote class="testimonial-quote" data-astro-cid-aadlzisc>Working with Bryan and Aaron has been great. They are responsive, knowledgeable, and genuinely care about results. LeadTruffle brought in leads right away and is exactly what my business needed. Highly recommend giving it a shot.</blockquote> </div> <div class="testimonial-author" data-astro-cid-aadlzisc> <img src="/images/testimonials/nick-tellie-we-love-junk.jpg" alt="Nick Tellie" loading="lazy" width="48" height="48" class="author-avatar" data-astro-cid-aadlzisc> <div class="author-info" data-astro-cid-aadlzisc> <p class="author-name" data-astro-cid-aadlzisc>Nick Tellie</p> <p class="author-role" data-astro-cid-aadlzisc>We Love Junk</p> </div> </div> </article><article class="testimonial-card" data-astro-cid-aadlzisc> <div class="testimonial-content" data-astro-cid-aadlzisc> <div class="testimonial-stars" aria-label="5 star rating" data-astro-cid-aadlzisc> <span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span> </div> <blockquote class="testimonial-quote" data-astro-cid-aadlzisc>LeadTruffle makes our lead flow smooth and efficient. Customers love the instant text responses and the AI filters out services we do not offer. We converted several leads in the first week, including a major account.</blockquote> </div> <div class="testimonial-author" data-astro-cid-aadlzisc> <img src="/images/testimonials/daniel-gibson-the-autollama.jpg" alt="Daniel Gibson" loading="lazy" width="48" height="48" class="author-avatar" data-astro-cid-aadlzisc> <div class="author-info" data-astro-cid-aadlzisc> <p class="author-name" data-astro-cid-aadlzisc>Daniel Gibson</p> <p class="author-role" data-astro-cid-aadlzisc>The Auto Llama</p> </div> </div> </article><article class="testimonial-card" data-astro-cid-aadlzisc> <div class="testimonial-content" data-astro-cid-aadlzisc> <div class="testimonial-stars" aria-label="5 star rating" data-astro-cid-aadlzisc> <span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span><span data-astro-cid-aadlzisc>★</span> </div> <blockquote class="testimonial-quote" data-astro-cid-aadlzisc>The team made setup simple, even when I was unfamiliar with the tools. Everything works perfectly and the pricing is excellent. We are getting steady leads through the widget and could not be happier.</blockquote> </div> <div class="testimonial-author" data-astro-cid-aadlzisc> <img src="/images/testimonials/michelle-hager-pristine-water-treatment.jpg" alt="Michelle Hager" loading="lazy" width="48" height="48" class="author-avatar" data-astro-cid-aadlzisc> <div class="author-info" data-astro-cid-aadlzisc> <p class="author-name" data-astro-cid-aadlzisc>Michelle Hager</p> <p class="author-role" data-astro-cid-aadlzisc>Pristinewater</p> </div> </div> </article> </div> </div> <button class="carousel-control next" type="button" aria-label="Next testimonials" data-testimonial-next data-astro-cid-aadlzisc> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-aadlzisc> <polyline points="9 18 15 12 9 6" data-astro-cid-aadlzisc></polyline> </svg> </button> </div> </div> </section> <script type="module">if(typeof window<"u"){const t=document.querySelector("[data-testimonial-track]"),r=document.querySelector("[data-testimonial-prev]"),c=document.querySelector("[data-testimonial-next]"),a=()=>{if(!t)return 0;const e=t.querySelector(".testimonial-card");if(!e)return 0;const o=parseFloat(getComputedStyle(t).gap)||0;return e.offsetWidth+o},n=e=>{const o=a();!t||o===0||t.scrollBy({left:e*o,behavior:"smooth"})};r?.addEventListener("click",()=>n(-1)),c?.addEventListener("click",()=>n(1))}</script>  <section class="as-seen-on-section" aria-labelledby="as-seen-on-heading" data-astro-cid-bfbg5aa6> <div class="as-seen-on-container" data-astro-cid-bfbg5aa6> <h3 id="as-seen-on-heading" data-astro-cid-bfbg5aa6>As Seen On</h3> <div class="as-seen-on-row" data-astro-cid-bfbg5aa6> <img class="as-seen-on-rail" src="/images/press/left-frame.svg" alt="" loading="lazy" width="91" height="220" data-astro-cid-bfbg5aa6> <div class="as-seen-on-grid" data-astro-cid-bfbg5aa6> <a class="as-seen-on-card" href="https://markets.businessinsider.com/news/stocks/leadtruffle-brings-ai-speed-to-lead-and-unified-inbox-to-u-s-home-service-businesses-1035981136" target="_blank" rel="nofollow noopener noreferrer" aria-label="Read LeadTruffle coverage on Markets Insider" data-astro-cid-bfbg5aa6> <img src="/images/press/markets-insider.png" alt="Markets Insider" loading="lazy" width="744" height="229" data-astro-cid-bfbg5aa6> </a><a class="as-seen-on-card" href="https://finance.yahoo.com/sectors/technology/articles/leadtruffle-brings-ai-speed-lead-150200266.html" target="_blank" rel="nofollow noopener noreferrer" aria-label="Read LeadTruffle coverage on Yahoo! Finance" data-astro-cid-bfbg5aa6> <img src="/images/press/yahoo-finance.png" alt="Yahoo! Finance" loading="lazy" width="744" height="229" data-astro-cid-bfbg5aa6> </a><a class="as-seen-on-card" href="https://apnews.com/press-release/globenewswire-mobile/leadtruffle-brings-ai-speed-to-lead-and-unified-inbox-to-u-s-home-service-businesses-1ef14448df6270be05bab1b5bbee8d7a" target="_blank" rel="nofollow noopener noreferrer" aria-label="Read LeadTruffle coverage on Associated Press" data-astro-cid-bfbg5aa6> <img src="/images/press/associated-press.png" alt="Associated Press" loading="lazy" width="744" height="229" data-astro-cid-bfbg5aa6> </a><a class="as-seen-on-card" href="https://www.marketwatch.com/press-release/leadtruffle-brings-ai-speed-to-lead-and-unified-inbox-to-u-s-home-service-businesses-0322bc26?mod=search_headline" target="_blank" rel="nofollow noopener noreferrer" aria-label="Read LeadTruffle coverage on MarketWatch" data-astro-cid-bfbg5aa6> <img src="/images/press/marketwatch.png" alt="MarketWatch" loading="lazy" width="744" height="229" data-astro-cid-bfbg5aa6> </a> </div> <img class="as-seen-on-rail as-seen-on-rail-right" src="/images/press/left-frame.svg" alt="" loading="lazy" width="91" height="220" data-astro-cid-bfbg5aa6> </div> </div> </section>   <section class="lead-sources-section" data-astro-cid-j7pv25f6> <div class="lead-sources-container" data-astro-cid-j7pv25f6> <div class="lead-sources-copy" data-astro-cid-j7pv25f6> <p class="section-eyebrow" data-astro-cid-j7pv25f6>How It Works</p> <h2 class="lead-sources-title" data-astro-cid-j7pv25f6>
+All Of Your Lead Sources In One Place
+</h2> <p class="lead-sources-subtitle" data-astro-cid-j7pv25f6>
+Whether the lead comes from your website, Google Local Services ads,
+            Angi, Thumbtack, Yelp, or a missed phone call, LeadTruffle responds
+            in seconds over text and voice and routes every conversation into
+            your unified inbox.
+</p> </div> <div class="lead-source-visual" data-astro-cid-j7pv25f6> <img src="/images/diagrams/lead-sources-diagram-small.jpeg" alt="Home service lead sources flowing into LeadTruffle for speed-to-lead routing" loading="lazy" width="1100" height="684" data-astro-cid-j7pv25f6> </div> </div> </section>  <section class="demo-section" id="how-it-works" data-astro-cid-j7pv25f6> <div class="demo-container" data-astro-cid-j7pv25f6> <div class="demo-content" data-astro-cid-j7pv25f6> <h2 data-astro-cid-j7pv25f6>See It In <span class="highlight" data-astro-cid-j7pv25f6>Action</span></h2> </div> <div class="demo-video" data-astro-cid-j7pv25f6> <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;" data-astro-cid-j7pv25f6> <iframe src="https://www.youtube.com/embed/ybtCUoGHrbk" title="YouTube video player" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-astro-cid-j7pv25f6>
+            </iframe> </div> </div> </div> </section>  <section class="use-cases-section" data-astro-cid-j7pv25f6> <div class="use-cases-container" data-astro-cid-j7pv25f6> <div class="use-cases-header" data-astro-cid-j7pv25f6> <h2 data-astro-cid-j7pv25f6>Your <span class="highlight" data-astro-cid-j7pv25f6>Speed-to-Lead</span> Toolbox</h2> <p data-astro-cid-j7pv25f6>
+One system that handles every lead that comes in, automatically. AI
+            follows up fast, books jobs, and keeps everything organized so
+            nothing slips through the cracks.
+</p> </div> <div class="use-cases-grid" data-astro-cid-j7pv25f6> <div class="use-case-card" data-astro-cid-j7pv25f6> <div class="use-case-icon use-case-icon-svg" data-astro-cid-j7pv25f6> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-j7pv25f6> <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" data-astro-cid-j7pv25f6></path> <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" data-astro-cid-j7pv25f6></circle> <circle cx="8" cy="12" r="1" fill="currentColor" stroke="none" data-astro-cid-j7pv25f6></circle> <circle cx="16" cy="12" r="1" fill="currentColor" stroke="none" data-astro-cid-j7pv25f6></circle> </svg> </div> <h3 data-astro-cid-j7pv25f6>AI Lead Qualification</h3> <p data-astro-cid-j7pv25f6>
+Automatically qualify leads and book jobs with AI that asks the
+              right questions and collects job details instantly.
+</p> <a href="/features/ai-lead-qualification/" class="use-case-link" data-astro-cid-j7pv25f6>Learn More →</a> </div> <div class="use-case-card" data-astro-cid-j7pv25f6> <div class="use-case-icon use-case-icon-svg" data-astro-cid-j7pv25f6> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-j7pv25f6> <rect x="2" y="3" width="20" height="14" rx="2" ry="2" data-astro-cid-j7pv25f6></rect> <line x1="8" y1="21" x2="16" y2="21" data-astro-cid-j7pv25f6></line> <line x1="12" y1="17" x2="12" y2="21" data-astro-cid-j7pv25f6></line> <path d="M7 8h2M7 11h4" data-astro-cid-j7pv25f6></path> <circle cx="16" cy="9.5" r="2.5" data-astro-cid-j7pv25f6></circle> </svg> </div> <h3 data-astro-cid-j7pv25f6>Website Texting</h3> <p data-astro-cid-j7pv25f6>
+Turn website visitors into instant text conversations with a
+              simple widget that converts 5x better than forms.
+</p> <a href="/features/website-chat-widget/" class="use-case-link" data-astro-cid-j7pv25f6>Learn More →</a> </div> <div class="use-case-card" data-astro-cid-j7pv25f6> <div class="use-case-icon" data-astro-cid-j7pv25f6>🎙️</div> <h3 data-astro-cid-j7pv25f6>AI Voice Agent</h3> <p data-astro-cid-j7pv25f6>
+AI answers missed calls with a friendly voice, collects details,
+              and routes or books jobs while you stay on the tools.
+</p> <a href="/features/ai-voice-agent" class="use-case-link" data-astro-cid-j7pv25f6>Learn More →</a> </div> <div class="use-case-card" data-astro-cid-j7pv25f6> <div class="use-case-icon" data-astro-cid-j7pv25f6>📞</div> <h3 data-astro-cid-j7pv25f6>Missed Call Text-Back</h3> <p data-astro-cid-j7pv25f6>
+Instantly text every missed call from your 10DLC number, qualify
+              the lead, and keep your response score high.
+</p> <a href="/features/missed-call-text-back" class="use-case-link" data-astro-cid-j7pv25f6>Learn More →</a> </div> <div class="use-case-card" data-astro-cid-j7pv25f6> <div class="use-case-icon use-case-icon-img" data-astro-cid-j7pv25f6> <img src="/images/integration-logo/transparent-bg-icons/Yelp.svg" alt="Yelp" width="56" height="56" loading="lazy" data-astro-cid-j7pv25f6> </div> <h3 data-astro-cid-j7pv25f6>Yelp Leads</h3> <p data-astro-cid-j7pv25f6>
+Instantly engage Yelp inquiries with AI SMS and voice to claim
+              jobs before competitors respond.
+</p> <a href="/features/yelp" class="use-case-link" data-astro-cid-j7pv25f6>Learn More →</a> </div> <div class="use-case-card" data-astro-cid-j7pv25f6> <div class="use-case-icon use-case-icon-img" data-astro-cid-j7pv25f6> <img src="/images/integration-logo/transparent-bg-icons/thumbtack_icon.svg" alt="Thumbtack" width="56" height="56" loading="lazy" data-astro-cid-j7pv25f6> </div> <h3 data-astro-cid-j7pv25f6>Thumbtack Leads</h3> <p data-astro-cid-j7pv25f6>
+Respond to Thumbtack leads automatically via our direct API
+              integration (no Zapier required).
+</p> <a href="/features/thumbtack" class="use-case-link" data-astro-cid-j7pv25f6>Learn More →</a> </div> <div class="use-case-card" data-astro-cid-j7pv25f6> <div class="use-case-icon use-case-icon-img" data-astro-cid-j7pv25f6> <img src="/images/integration-logo/transparent-bg-icons/angi-icon.svg" alt="Angi" width="56" height="56" loading="lazy" data-astro-cid-j7pv25f6> </div> <h3 data-astro-cid-j7pv25f6>Angi Leads</h3> <p data-astro-cid-j7pv25f6>
+Angi leads hit LeadTruffle automatically and get a text from your AI in seconds.
+</p> <a href="/features/angi" class="use-case-link" data-astro-cid-j7pv25f6>Learn More →</a> </div> <div class="use-case-card" data-astro-cid-j7pv25f6> <div class="use-case-icon use-case-icon-img" data-astro-cid-j7pv25f6> <img src="/images/integration-logo/transparent-bg-icons/Google__G__logo.svg" alt="Google LSA" width="56" height="56" loading="lazy" data-astro-cid-j7pv25f6> </div> <h3 data-astro-cid-j7pv25f6>Google LSA Leads</h3> <p data-astro-cid-j7pv25f6>
+Instant AI response for Google Local Services Ads leads. Improve
+              your ranking with faster response times.
+</p> <a href="/features/google-lsa" class="use-case-link" data-astro-cid-j7pv25f6>Learn More →</a> </div> <div class="use-case-card" data-astro-cid-j7pv25f6> <div class="use-case-icon use-case-icon-img" data-astro-cid-j7pv25f6> <img src="/images/integration-logo/transparent-bg-icons/Facebook_f_logo_2021.svg" alt="Facebook" width="56" height="56" loading="lazy" data-astro-cid-j7pv25f6> </div> <h3 data-astro-cid-j7pv25f6>Facebook Lead Forms</h3> <p data-astro-cid-j7pv25f6>
+Capture Facebook leads via Zapier and your AI texts them back instantly.
+</p> <a href="/features/facebook-leads" class="use-case-link" data-astro-cid-j7pv25f6>Learn More →</a> </div> </div> </div> </section>  <section class="schedule-demo-section" data-astro-cid-j7pv25f6> <div class="schedule-demo-container" data-astro-cid-j7pv25f6> <div class="schedule-demo-content" data-astro-cid-j7pv25f6> <h2 data-astro-cid-j7pv25f6>Schedule a 1-on-1 <span class="highlight" data-astro-cid-j7pv25f6>Demo</span></h2> <p data-astro-cid-j7pv25f6>Learn how LeadTruffle can help you grow your business</p> <a class="btn btn-secondary btn-lg schedule-demo-btn" href="https://calendly.com/leadtruffle/demo-website?utm_source=wwwleadtruffleco&utm_medium=website&utm_campaign=demo&utm_content=homepage" onclick="trackMarketingDemoClicked('home-schedule-demo-talk-to-us')" data-astro-cid-j7pv25f6="true" data-astro-cid-vnzlvqnm> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="calendar-icon" data-astro-cid-j7pv25f6> <rect x="3" y="4" width="18" height="18" rx="2" ry="2" data-astro-cid-j7pv25f6></rect> <line x1="16" y1="2" x2="16" y2="6" data-astro-cid-j7pv25f6></line> <line x1="8" y1="2" x2="8" y2="6" data-astro-cid-j7pv25f6></line> <line x1="3" y1="10" x2="21" y2="10" data-astro-cid-j7pv25f6></line> </svg>
+Talk to Us
+</a> </div> <div class="schedule-demo-photo-wrap" data-astro-cid-j7pv25f6> <img src="/images/bryan_casual_headshot.jpg" alt="Bryan, co-founder of LeadTruffle" class="schedule-demo-photo" loading="lazy" data-astro-cid-j7pv25f6> <p class="schedule-demo-photo-caption" data-astro-cid-j7pv25f6>Bryan, Co-founder</p> </div> </div> </section>  <section class="integrations-grid-section" data-astro-cid-j7pv25f6> <div class="integrations-grid-container" data-astro-cid-j7pv25f6> <h2 data-astro-cid-j7pv25f6>Connected with All the Tools You're Already Using</h2> <div class="integrations-grid" data-astro-cid-j7pv25f6> <div class="integration-tile" data-astro-cid-j7pv25f6>Jobber</div><div class="integration-tile" data-astro-cid-j7pv25f6>Housecall Pro</div><div class="integration-tile" data-astro-cid-j7pv25f6>ServiceTitan</div><div class="integration-tile" data-astro-cid-j7pv25f6>JobNimbus</div><div class="integration-tile" data-astro-cid-j7pv25f6>Yelp</div><div class="integration-tile" data-astro-cid-j7pv25f6>Thumbtack</div><div class="integration-tile" data-astro-cid-j7pv25f6>ServiceMonster</div><div class="integration-tile" data-astro-cid-j7pv25f6>SmartMoving</div><div class="integration-tile" data-astro-cid-j7pv25f6>Google Business</div><div class="integration-tile" data-astro-cid-j7pv25f6>Google Analytics</div><div class="integration-tile" data-astro-cid-j7pv25f6>CallRail</div><div class="integration-tile" data-astro-cid-j7pv25f6>Zapier</div><div class="integration-tile" data-astro-cid-j7pv25f6>Webhooks</div><div class="integration-tile" data-astro-cid-j7pv25f6>Facebook Leads</div><div class="integration-tile" data-astro-cid-j7pv25f6>HubSpot</div><div class="integration-tile" data-astro-cid-j7pv25f6>Pipedrive</div><div class="integration-tile" data-astro-cid-j7pv25f6>Meta Pixel</div><div class="integration-tile" data-astro-cid-j7pv25f6>Workiz</div><div class="integration-tile" data-astro-cid-j7pv25f6>Custom API</div> </div> <p class="integrations-caption" data-astro-cid-j7pv25f6>
+Every qualified lead is pushed into your CRM or scheduling software
+          with full conversation history and workflow status. No manual data
+          entry required.
+</p> <div class="speed-links" data-astro-cid-j7pv25f6> <span data-astro-cid-j7pv25f6>Explore speed-to-lead tools:</span> <a href="/features/ai-voice-agent" data-astro-cid-j7pv25f6>AI Voice</a> <a href="/features/missed-call-text-back" data-astro-cid-j7pv25f6>Text-Back</a> <a href="/features/google-lsa" data-astro-cid-j7pv25f6>Google LSA</a> <a href="/features/thumbtack" data-astro-cid-j7pv25f6>Thumbtack</a> <a href="/features/yelp" data-astro-cid-j7pv25f6>Yelp</a> <a href="/features/ai-email-campaigns" data-astro-cid-j7pv25f6>AI Email Campaigns</a> <a href="/features/facebook-leads" data-astro-cid-j7pv25f6>Facebook Lead Ads</a> </div> </div> </section>  <section class="use-cases-section" data-astro-cid-j7pv25f6> <div class="use-cases-container" data-astro-cid-j7pv25f6> <div class="use-cases-header" data-astro-cid-j7pv25f6> <h2 data-astro-cid-j7pv25f6>Never Let a Missed Call Turn Into a <span class="highlight" data-astro-cid-j7pv25f6>Missed Customer</span></h2> <p data-astro-cid-j7pv25f6>No matter what's slowing you down, LeadTruffle has you covered.</p> </div> <div class="use-cases-grid" data-astro-cid-j7pv25f6> <div class="use-case-card" data-astro-cid-j7pv25f6> <div class="use-case-icon" data-astro-cid-j7pv25f6>🌙</div> <h3 data-astro-cid-j7pv25f6>After Hours Support</h3> <p data-astro-cid-j7pv25f6>
+Capture leads even when you're sleeping. 24/7 AI responds to
+              inquiries and books appointments.
+</p> <a href="/use-cases/after-hours/" class="use-case-link" data-astro-cid-j7pv25f6>Learn More →</a> </div> <div class="use-case-card" data-astro-cid-j7pv25f6> <div class="use-case-icon" data-astro-cid-j7pv25f6>⚡</div> <h3 data-astro-cid-j7pv25f6>Slow Response Times</h3> <p data-astro-cid-j7pv25f6>
+Beat your competition with instant responses. Never let leads go
+              cold while you're busy on jobs.
+</p> <a href="/use-cases/slow-response/" class="use-case-link" data-astro-cid-j7pv25f6>Learn More →</a> </div> <div class="use-case-card" data-astro-cid-j7pv25f6> <div class="use-case-icon" data-astro-cid-j7pv25f6>🎯</div> <h3 data-astro-cid-j7pv25f6>Unqualified Leads</h3> <p data-astro-cid-j7pv25f6>
+Filter out tire kickers automatically. Only spend time on leads
+              ready to book and pay.
+</p> <a href="/use-cases/tire-kicker-leads/" class="use-case-link" data-astro-cid-j7pv25f6>Learn More →</a> </div> <div class="use-case-card" data-astro-cid-j7pv25f6> <div class="use-case-icon" data-astro-cid-j7pv25f6>📈</div> <h3 data-astro-cid-j7pv25f6>Busy Seasons</h3> <p data-astro-cid-j7pv25f6>
+Handle your busy season without adding headcount. AI picks up the slack.
+</p> <a href="/use-cases/seasonal-surges/" class="use-case-link" data-astro-cid-j7pv25f6>Learn More →</a> </div> <div class="use-case-card" data-astro-cid-j7pv25f6> <div class="use-case-icon" data-astro-cid-j7pv25f6>🥱</div> <h3 data-astro-cid-j7pv25f6>Tire Kicker Leads</h3> <p data-astro-cid-j7pv25f6>
+Filter out tire kickers automatically. Only spend time on leads
+              ready to book and pay.
+</p> <a href="/use-cases/tire-kicker-leads/" class="use-case-link" data-astro-cid-j7pv25f6>Learn More →</a> </div> </div> <div class="use-cases-cta" data-astro-cid-j7pv25f6> <p data-astro-cid-j7pv25f6>Ready to solve your biggest lead challenges?</p> <div style="display: flex; gap: 1em; justify-content: center; flex-wrap: wrap;" data-astro-cid-j7pv25f6> <a class="btn btn-outline btn-lg" href="/use-cases/" data-astro-cid-j7pv25f6="true" data-astro-cid-vnzlvqnm>
+See All Use Cases
+</a> </div> </div> </div> </section> <!-- FAQ Schema for SEO --><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does LeadTruffle work?","acceptedAnswer":{"@type":"Answer","text":"LeadTruffle connects to your main lead sources - including your website, phone, Google, Facebook, Thumbtack, Yelp, and more - and instantly responds to new leads using AI via SMS, email, and voice. It qualifies them using your rules and books appointments directly into your calendar."}},{"@type":"Question","name":"How is the AI customized to my business?","acceptedAnswer":{"@type":"Answer","text":"During onboarding, we build an AI knowledge base by scraping your website and adding details about your services and sales process. Each lead source also gets its own customizable prompt so the AI handles conversations exactly the way you want."}},{"@type":"Question","name":"Do you integrate with my existing CRM?","acceptedAnswer":{"@type":"Answer","text":"Yes. LeadTruffle has native integrations with Jobber, Housecall Pro, AccuLynx, SmartMoving, HubSpot, Workiz, MaidCentral, ServiceMonster, ServiceMinder, and more. We also provide a native Zapier app that connects to 8,000+ other CRMs and apps."}},{"@type":"Question","name":"Is LeadTruffle easy to set up?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every customer gets a dedicated onboarding call and a shared setup checklist. Our team handles the technical work with you or for you to ensure your AI is fully configured and ready to generate results."}},{"@type":"Question","name":"What phone numbers does LeadTruffle use?","acceptedAnswer":{"@type":"Answer","text":"For AI voice answering, calls forward to a private number we provide (your customers never see it). For texting, Essential plans use a toll-free number, while Growth, Scale, and Enterprise plans include a dedicated 10DLC number registered for your business."}},{"@type":"Question","name":"How much does LeadTruffle cost?","acceptedAnswer":{"@type":"Answer","text":"Plans start at $229/month for Essential, $399/month for Growth, and $629/month for Scale, with custom pricing available for Enterprise. View all pricing plans."}},{"@type":"Question","name":"What's the difference between the plans?","acceptedAnswer":{"@type":"Answer","text":"Higher plans include larger monthly lead limits, more SMS/email/voice credits, 10DLC registration, advanced integrations, and priority support. Enterprise adds white-labeling, multi-location support, custom limits, and more. View all pricing plans."}},{"@type":"Question","name":"Is there a long-term contract?","acceptedAnswer":{"@type":"Answer","text":"No. All plans are month-to-month, and you can upgrade or cancel anytime."}},{"@type":"Question","name":"How do lead limits work?","acceptedAnswer":{"@type":"Answer","text":"Each plan includes a monthly lead allowance plus a 150% grace buffer before lead processing pauses. Leads are counted per unique person, not per interaction. Learn more about lead limits here."}},{"@type":"Question","name":"What happens if I go over my plan's limits?","acceptedAnswer":{"@type":"Answer","text":"If you exceed your monthly limits - whether lead, SMS, email, or AI voice minutes - you'll be prompted to upgrade to a higher plan. Enterprise plans include custom limits tailored to your volume."}}]}</script> <section class="faq-section" data-astro-cid-al2ca2vr> <div class="faq-container" data-astro-cid-al2ca2vr> <div class="faq-header" data-astro-cid-al2ca2vr> <h2 class="faq-title" data-astro-cid-al2ca2vr>Frequently Asked Questions</h2> <div class="faq-actions" data-astro-cid-al2ca2vr> <a class="btn ghost" href="/faq/" data-astro-cid-al2ca2vr>View All FAQs</a> <a class="btn primary" href="https://calendly.com/leadtruffle/general?utm_source=wwwleadtruffleco&utm_medium=faq-component&utm_campaign=book-a-call" target="_blank" rel="noreferrer" data-astro-cid-al2ca2vr>
+Book a Call
+</a> </div> </div> <div class="tablist" role="tablist" aria-label="FAQ categories" data-astro-cid-al2ca2vr> <button class="tab active" data-tab-trigger="product" role="tab" aria-selected="true" aria-controls="panel-product" tabindex="0" type="button" data-astro-cid-al2ca2vr> Product </button><button class="tab" data-tab-trigger="pricing" role="tab" aria-selected="false" aria-controls="panel-pricing" tabindex="-1" type="button" data-astro-cid-al2ca2vr> Pricing </button> </div> <div class="faq-items" data-tab-panel="product" id="panel-product" role="tabpanel" aria-label="Product FAQs" data-astro-cid-al2ca2vr> <div class="faq-item" data-astro-cid-al2ca2vr> <button class="faq-question" aria-expanded="false" aria-controls="product-faq-0" type="button" data-astro-cid-al2ca2vr> <span data-astro-cid-al2ca2vr>How does LeadTruffle work?</span> <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-al2ca2vr> <line x1="18" y1="6" x2="6" y2="18" data-astro-cid-al2ca2vr></line> <line x1="6" y1="6" x2="18" y2="18" data-astro-cid-al2ca2vr></line> </svg> </button> <div class="faq-answer" id="product-faq-0" data-astro-cid-al2ca2vr> <p data-astro-cid-al2ca2vr>LeadTruffle connects to your main lead sources - including your website, phone, Google, Facebook, Thumbtack, Yelp, and more - and instantly responds to new leads using AI via SMS, email, and voice. It qualifies them using your rules and books appointments directly into your calendar.</p> </div> </div><div class="faq-item" data-astro-cid-al2ca2vr> <button class="faq-question" aria-expanded="false" aria-controls="product-faq-1" type="button" data-astro-cid-al2ca2vr> <span data-astro-cid-al2ca2vr>How is the AI customized to my business?</span> <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-al2ca2vr> <line x1="18" y1="6" x2="6" y2="18" data-astro-cid-al2ca2vr></line> <line x1="6" y1="6" x2="18" y2="18" data-astro-cid-al2ca2vr></line> </svg> </button> <div class="faq-answer" id="product-faq-1" data-astro-cid-al2ca2vr> <p data-astro-cid-al2ca2vr>During onboarding, we build an AI knowledge base by scraping your website and adding details about your services and sales process. Each lead source also gets its own customizable prompt so the AI handles conversations exactly the way you want.</p> </div> </div><div class="faq-item" data-astro-cid-al2ca2vr> <button class="faq-question" aria-expanded="false" aria-controls="product-faq-2" type="button" data-astro-cid-al2ca2vr> <span data-astro-cid-al2ca2vr>Do you integrate with my existing CRM?</span> <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-al2ca2vr> <line x1="18" y1="6" x2="6" y2="18" data-astro-cid-al2ca2vr></line> <line x1="6" y1="6" x2="18" y2="18" data-astro-cid-al2ca2vr></line> </svg> </button> <div class="faq-answer" id="product-faq-2" data-astro-cid-al2ca2vr> <p data-astro-cid-al2ca2vr>Yes. LeadTruffle has native integrations with Jobber, Housecall Pro, AccuLynx, SmartMoving, HubSpot, Workiz, MaidCentral, ServiceMonster, ServiceMinder, and more. We also provide a native Zapier app that connects to 8,000+ other CRMs and apps.</p> </div> </div><div class="faq-item" data-astro-cid-al2ca2vr> <button class="faq-question" aria-expanded="false" aria-controls="product-faq-3" type="button" data-astro-cid-al2ca2vr> <span data-astro-cid-al2ca2vr>Is LeadTruffle easy to set up?</span> <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-al2ca2vr> <line x1="18" y1="6" x2="6" y2="18" data-astro-cid-al2ca2vr></line> <line x1="6" y1="6" x2="18" y2="18" data-astro-cid-al2ca2vr></line> </svg> </button> <div class="faq-answer" id="product-faq-3" data-astro-cid-al2ca2vr> <p data-astro-cid-al2ca2vr>Yes. Every customer gets a dedicated onboarding call and a shared setup checklist. Our team handles the technical work with you or for you to ensure your AI is fully configured and ready to generate results.</p> </div> </div><div class="faq-item" data-astro-cid-al2ca2vr> <button class="faq-question" aria-expanded="false" aria-controls="product-faq-4" type="button" data-astro-cid-al2ca2vr> <span data-astro-cid-al2ca2vr>What phone numbers does LeadTruffle use?</span> <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-al2ca2vr> <line x1="18" y1="6" x2="6" y2="18" data-astro-cid-al2ca2vr></line> <line x1="6" y1="6" x2="18" y2="18" data-astro-cid-al2ca2vr></line> </svg> </button> <div class="faq-answer" id="product-faq-4" data-astro-cid-al2ca2vr> <p data-astro-cid-al2ca2vr>For AI voice answering, calls forward to a private number we provide (your customers never see it). For texting, Essential plans use a toll-free number, while Growth, Scale, and Enterprise plans include a dedicated 10DLC number registered for your business.</p> </div> </div> </div><div class="faq-items" data-tab-panel="pricing" id="panel-pricing" role="tabpanel" aria-label="Pricing FAQs" hidden data-astro-cid-al2ca2vr> <div class="faq-item" data-astro-cid-al2ca2vr> <button class="faq-question" aria-expanded="false" aria-controls="pricing-faq-0" type="button" data-astro-cid-al2ca2vr> <span data-astro-cid-al2ca2vr>How much does LeadTruffle cost?</span> <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-al2ca2vr> <line x1="18" y1="6" x2="6" y2="18" data-astro-cid-al2ca2vr></line> <line x1="6" y1="6" x2="18" y2="18" data-astro-cid-al2ca2vr></line> </svg> </button> <div class="faq-answer" id="pricing-faq-0" data-astro-cid-al2ca2vr> <p data-astro-cid-al2ca2vr>Plans start at $229/month for Essential, $399/month for Growth, and $629/month for Scale, with custom pricing available for Enterprise. View all pricing plans.</p> </div> </div><div class="faq-item" data-astro-cid-al2ca2vr> <button class="faq-question" aria-expanded="false" aria-controls="pricing-faq-1" type="button" data-astro-cid-al2ca2vr> <span data-astro-cid-al2ca2vr>What&#39;s the difference between the plans?</span> <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-al2ca2vr> <line x1="18" y1="6" x2="6" y2="18" data-astro-cid-al2ca2vr></line> <line x1="6" y1="6" x2="18" y2="18" data-astro-cid-al2ca2vr></line> </svg> </button> <div class="faq-answer" id="pricing-faq-1" data-astro-cid-al2ca2vr> <p data-astro-cid-al2ca2vr>Higher plans include larger monthly lead limits, more SMS/email/voice credits, 10DLC registration, advanced integrations, and priority support. Enterprise adds white-labeling, multi-location support, custom limits, and more. View all pricing plans.</p> </div> </div><div class="faq-item" data-astro-cid-al2ca2vr> <button class="faq-question" aria-expanded="false" aria-controls="pricing-faq-2" type="button" data-astro-cid-al2ca2vr> <span data-astro-cid-al2ca2vr>Is there a long-term contract?</span> <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-al2ca2vr> <line x1="18" y1="6" x2="6" y2="18" data-astro-cid-al2ca2vr></line> <line x1="6" y1="6" x2="18" y2="18" data-astro-cid-al2ca2vr></line> </svg> </button> <div class="faq-answer" id="pricing-faq-2" data-astro-cid-al2ca2vr> <p data-astro-cid-al2ca2vr>No. All plans are month-to-month, and you can upgrade or cancel anytime.</p> </div> </div><div class="faq-item" data-astro-cid-al2ca2vr> <button class="faq-question" aria-expanded="false" aria-controls="pricing-faq-3" type="button" data-astro-cid-al2ca2vr> <span data-astro-cid-al2ca2vr>How do lead limits work?</span> <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-al2ca2vr> <line x1="18" y1="6" x2="6" y2="18" data-astro-cid-al2ca2vr></line> <line x1="6" y1="6" x2="18" y2="18" data-astro-cid-al2ca2vr></line> </svg> </button> <div class="faq-answer" id="pricing-faq-3" data-astro-cid-al2ca2vr> <p data-astro-cid-al2ca2vr>Each plan includes a monthly lead allowance plus a 150% grace buffer before lead processing pauses. Leads are counted per unique person, not per interaction. Learn more about lead limits here.</p> </div> </div><div class="faq-item" data-astro-cid-al2ca2vr> <button class="faq-question" aria-expanded="false" aria-controls="pricing-faq-4" type="button" data-astro-cid-al2ca2vr> <span data-astro-cid-al2ca2vr>What happens if I go over my plan&#39;s limits?</span> <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-al2ca2vr> <line x1="18" y1="6" x2="6" y2="18" data-astro-cid-al2ca2vr></line> <line x1="6" y1="6" x2="18" y2="18" data-astro-cid-al2ca2vr></line> </svg> </button> <div class="faq-answer" id="pricing-faq-4" data-astro-cid-al2ca2vr> <p data-astro-cid-al2ca2vr>If you exceed your monthly limits - whether lead, SMS, email, or AI voice minutes - you&#39;ll be prompted to upgrade to a higher plan. Enterprise plans include custom limits tailored to your volume.</p> </div> </div> </div> </div> </section>  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const root = document.querySelector('.faq-section')
+    if (!root) return
+
+    const tabs = Array.from(root.querySelectorAll('[data-tab-trigger]'))
+    const panels = Array.from(root.querySelectorAll('[data-tab-panel]'))
+
+    const showTab = (tabKey) => {
+      tabs.forEach((tab) => {
+        const isActive = tab.dataset.tabTrigger === tabKey
+        tab.classList.toggle('active', isActive)
+        tab.setAttribute('aria-selected', String(isActive))
+        tab.setAttribute('tabindex', isActive ? '0' : '-1')
+      })
+
+      panels.forEach((panel) => {
+        const isActive = panel.dataset.tabPanel === tabKey
+        panel.hidden = !isActive
+        panel.classList.toggle('active', isActive)
+        panel.querySelectorAll('.faq-item').forEach((item) => {
+          item.classList.remove('active')
+          const question = item.querySelector('.faq-question')
+          if (question) question.setAttribute('aria-expanded', 'false')
+        })
+      })
+    }
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => showTab(tab.dataset.tabTrigger))
+    })
+
+    panels.forEach((panel) => {
+      panel.addEventListener('click', (event) => {
+        const button = event.target.closest('.faq-question')
+        if (!button) return
+
+        const item = button.closest('.faq-item')
+        const isActive = item?.classList.contains('active')
+
+        panel.querySelectorAll('.faq-item').forEach((faq) => {
+          faq.classList.remove('active')
+          const question = faq.querySelector('.faq-question')
+          if (question) question.setAttribute('aria-expanded', 'false')
+        })
+
+        if (!isActive && item) {
+          item.classList.add('active')
+          button.setAttribute('aria-expanded', 'true')
+        }
+      })
+    })
+
+    const initialTab = tabs[0]?.dataset.tabTrigger
+    if (initialTab) {
+      showTab(initialTab)
+    }
+  })
+</script>  <section class="final-cta-section" data-astro-cid-j7pv25f6> <div class="final-cta-container" data-astro-cid-j7pv25f6> <div class="final-cta-content" data-astro-cid-j7pv25f6> <h2 data-astro-cid-j7pv25f6>Ready to <span class="highlight" data-astro-cid-j7pv25f6>win more</span> jobs?</h2> <p data-astro-cid-j7pv25f6>
+Book more jobs without working more hours.
+</p> <div class="final-cta-buttons" data-astro-cid-j7pv25f6> <a class="btn btn-white btn-lg" href="https://calendly.com/leadtruffle/demo-website?utm_source=wwwleadtruffleco&utm_medium=website&utm_campaign=demo&utm_content=homepage" onclick="trackMarketingDemoClicked('home-final-cta-talk-to-us')" data-astro-cid-j7pv25f6="true" data-astro-cid-vnzlvqnm>
+Talk to Us
+</a> </div> </div> </div> </section>  <!-- Content will go here --> </article> </main> <footer data-astro-cid-sz7xmlte> <div class="footer-content" data-astro-cid-sz7xmlte> <!-- Logo Section --> <div class="footer-section logo-section" data-astro-cid-sz7xmlte> <div class="footer-logo" data-astro-cid-sz7xmlte> <img src="/logo.svg" alt="LeadTruffle logo" class="footer-logo-img" data-astro-cid-sz7xmlte> </div> <div class="footer-contact" data-astro-cid-sz7xmlte> <p data-astro-cid-sz7xmlte>Contact us:</p> <a href="/cdn-cgi/l/email-protection#75060005051a07013519101411010700131319105b161a18" data-astro-cid-sz7xmlte><span class="__cf_email__" data-cfemail="a8dbddd8d8c7dadce8c4cdc9ccdcdaddcecec4cd86cbc7c5">[email&#160;protected]</span></a> <a href="tel:+18339163717" data-astro-cid-sz7xmlte>Call to demo! +1 (833) 916-3717</a> <div class="made-in-usa" data-astro-cid-sz7xmlte>🇺🇸 Made in the USA</div> <div class="serving-countries" data-astro-cid-sz7xmlte>Serving customers in 🇺🇸 US and 🇨🇦 Canada</div> </div> </div> <!-- Quick Links --> <div class="footer-section" data-astro-cid-sz7xmlte> <h4 data-astro-cid-sz7xmlte>Quick Links</h4> <div class="footer-nav" data-astro-cid-sz7xmlte> <a href="/" data-astro-cid-sz7xmlte>Home</a> <a href="/locations/" data-astro-cid-sz7xmlte>Locations</a> <a href="/customers/" data-astro-cid-sz7xmlte>Customers</a> <a href="/press-releases/" data-astro-cid-sz7xmlte>Press Releases</a> <a href="/agencies/" data-astro-cid-sz7xmlte>Agencies</a> <a href="/blog/" data-astro-cid-sz7xmlte>Blog</a> <a href="/pricing/" data-astro-cid-sz7xmlte>Pricing</a> <a href="/about/" data-astro-cid-sz7xmlte>About</a> <a href="/faq/" data-astro-cid-sz7xmlte>FAQ</a> <a href="/why-leadtruffle/" data-astro-cid-sz7xmlte>Why LeadTruffle</a> </div> </div> <!-- Features --> <div class="footer-section" data-astro-cid-sz7xmlte> <h4 data-astro-cid-sz7xmlte>Features</h4> <div class="footer-nav" data-astro-cid-sz7xmlte> <a href="/features/" data-astro-cid-sz7xmlte>All Features</a> <a href="/ai-receptionist-home-services/" data-astro-cid-sz7xmlte>AI Receptionist</a> <a href="/features/ai-email-campaigns/" data-astro-cid-sz7xmlte>AI Email Campaigns</a> <a href="/hvac-answering-service/" data-astro-cid-sz7xmlte>HVAC Answering</a> <a href="/plumbing-answering-service/" data-astro-cid-sz7xmlte>Plumbing Answering</a> <a href="/electrician-answering-service/" data-astro-cid-sz7xmlte>Electrician Answering</a> <a href="/roofing-answering-service/" data-astro-cid-sz7xmlte>Roofing Answering</a> <a href="/landscaping-answering-service/" data-astro-cid-sz7xmlte>Landscaping Answering</a> <a href="/integrations/" data-astro-cid-sz7xmlte>All Integrations</a> </div> </div> <!-- Lead Sources --> <div class="footer-section" data-astro-cid-sz7xmlte> <h4 data-astro-cid-sz7xmlte>Lead Sources</h4> <div class="footer-nav" data-astro-cid-sz7xmlte> <a href="/angi-leads/" data-astro-cid-sz7xmlte>Angi Leads</a> <a href="/speed-to-lead/" data-astro-cid-sz7xmlte>Speed to Lead</a> <a href="/thumbtack-autoresponder/" data-astro-cid-sz7xmlte>Thumbtack Autoresponder</a> <a href="/yelp-auto-responder/" data-astro-cid-sz7xmlte>Yelp Auto Responder</a> <a href="/google-lsa-autoresponder/" data-astro-cid-sz7xmlte>Google LSA Autoresponder</a> <a href="/angi-autoresponder/" data-astro-cid-sz7xmlte>Angi Autoresponder</a> <a href="/use-cases/" data-astro-cid-sz7xmlte>Use Cases</a> <a href="/industries/" data-astro-cid-sz7xmlte>Industries</a> </div> </div> <!-- Resources --> <div class="footer-section" data-astro-cid-sz7xmlte> <h4 data-astro-cid-sz7xmlte>Resources</h4> <div class="footer-nav" data-astro-cid-sz7xmlte> <a href="/business-recommendations/" data-astro-cid-sz7xmlte>AI Recommendations Checker</a> <a href="/tools/ai-business-knowledge/" data-astro-cid-sz7xmlte>AI Business Knowledge Checker</a> <a href="/customers/" data-astro-cid-sz7xmlte>Customers</a> <a href="/press-releases/" data-astro-cid-sz7xmlte>Press Releases</a> <a href="/tools/roi-calculator/" data-astro-cid-sz7xmlte>ROI Calculator</a> <a href="/product-comparisons/" data-astro-cid-sz7xmlte>Product Comparisons</a> <a href="/agency-directory/" data-astro-cid-sz7xmlte>Agency Directory</a> <a href="https://api-docs.leadtruffle.com/" target="_blank" data-astro-cid-sz7xmlte>API Documentation</a> <a href="https://help.leadtruffle.co/" target="_blank" data-astro-cid-sz7xmlte>Help Center</a> <a href="https://leadtruffle.getrewardful.com/signup?utm_source=wwwleadtruffleco&utm_medium=footer&utm_campaign=footer" target="_blank" data-astro-cid-sz7xmlte>Affiliate Program</a> </div> </div> <!-- Account --> <div class="footer-section" data-astro-cid-sz7xmlte> <h4 data-astro-cid-sz7xmlte>Account</h4> <div class="footer-nav" data-astro-cid-sz7xmlte> <a href="https://app.leadtruffle.com?utm_source=wwwleadtruffleco&utm_medium=footer&utm_campaign=footer" target="_blank" data-astro-cid-sz7xmlte>Login</a> <a href="https://calendly.com/leadtruffle/general?utm_source=wwwleadtruffleco&utm_medium=footer&utm_campaign=footer" target="_blank" class="demo-button" onclick="trackMarketingDemoClicked('footer-talk-to-us')" data-astro-cid-sz7xmlte>
+Talk to Us
+</a> </div> </div> <!-- Follow Us --> <div class="footer-section" data-astro-cid-sz7xmlte> <h4 data-astro-cid-sz7xmlte>Follow us</h4> <div class="footer-social" data-astro-cid-sz7xmlte> <a href="https://x.com/leadtruffle" target="_blank" class="social-link" data-astro-cid-sz7xmlte> <span class="social-icon" data-astro-cid-sz7xmlte>𝕏</span>
+@leadtruffle
+</a> <a href="https://www.linkedin.com/company/leadtruffle/" target="_blank" class="social-link" data-astro-cid-sz7xmlte> <span class="social-icon" data-astro-cid-sz7xmlte>in</span>
+LinkedIn
+</a> </div> </div> </div> <div class="footer-bottom" data-astro-cid-sz7xmlte> <div class="footer-legal" data-astro-cid-sz7xmlte> <span data-astro-cid-sz7xmlte>© 2026 LeadTruffle. All rights reserved.</span> <a href="https://www.leadtruffle.co/privacy-policy" data-astro-cid-sz7xmlte>Privacy Policy</a> <a href="https://www.leadtruffle.co/terms-of-service" data-astro-cid-sz7xmlte>Terms of Service</a> <a href="/sitemap-index.xml" data-astro-cid-sz7xmlte>Sitemap</a> <a href="/rss.xml" data-astro-cid-sz7xmlte>RSS Feed</a> </div> </div> </footer>  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer></script><script type="module">(function(){var e=document.createElement("script");e.src="https://embeds-v1.leadtruffle.com/tooldesk-widget.js",e.async=!0,e.onload=function(){window.LTWidget.initialize({companyId:"f096f9e3-001d-49ac-864c-3d73453bbe08"})},document.head.appendChild(e)})();</script> <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"5ee419b6545246b9891be2392917161a","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body></html> 

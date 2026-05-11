@@ -1,0 +1,16 @@
+# Large video files — too big for GitHub, stored locally only
+site-images/grace/video/grace_white_bg.mp4
+site-images/grace/video/grace_wan27_v1.mp4
+site-images/grace/video/dark grace (1248 x 1664 px).mp4
+site-images/video/brand-overview.mp4
+
+# Large source images
+site-images/grace/source/grace_4k_uprez.png
+site-images/grace/source/grace_blue_bg.png
+
+# Active videos (too large for GitHub — deploy separately)
+site-images/grace/video/GRACE_ap.mp4
+site-images/video/HOWTOVIDEOF.mp4
+
+# OS files
+.DS_Store
